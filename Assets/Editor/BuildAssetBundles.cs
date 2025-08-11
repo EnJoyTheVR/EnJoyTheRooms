@@ -19,8 +19,8 @@ public class BuildAssetBundles
         //                                   BuildAssetBundleOptions.CompleteAssets |
         //                                   BuildAssetBundleOptions.StrictMode;
 
-        BuildPipeline.BuildAssetBundles(assetBundleDirectory, BuildAssetBundleOptions.None, BuildTarget.iOS);
+        BuildPipeline.BuildAssetBundles(assetBundleDirectory, BuildAssetBundleOptions.None, BuildTarget.Android);
 
-        Debug.Log("AssetBundles successfully built for iOS at: " + assetBundleDirectory);
+        Debug.Log("AssetBundles successfully built for Android at: " + assetBundleDirectory);
     }
 }

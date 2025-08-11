@@ -5,17 +5,29 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/SampleScenes/legacy/ExampleZombieGame/MainGame.unity
     guid: c2b23885c4dcb4a479d4534dd0603ba3
-  - enabled: 1
+  - enabled: 0
     path: Assets/SampleScenes/legacy/ExampleZombieGame/examplegame.unity
     guid: df5e1048230134fa1b2d6d4e2eb8f813
-  - enabled: 1
+  - enabled: 0
     path: Assets/SampleScenes/legacy/ExamplePhoton/examplephoton.unity
     guid: fffa9e90f7e5642e08dcf15cb148b278
-  - enabled: 1
+  - enabled: 0
     path: Assets/SampleScenes/legacy/ExamplePhoton/Game_NY.unity
     guid: 2008bbc6b2e0f4ae2ad14a263c84fde8
+  - enabled: 1
+    path: Assets/evrooms.unity
+    guid: 816152083d2b15c48a8379e8439baf45
+  - enabled: 1
+    path: Assets/ForMe/scenes/MainGame1.unity
+    guid: f6a682f912da49d439c5fa9605b11685
+  - enabled: 1
+    path: Assets/ForMe/scenes/MainGame2.unity
+    guid: 09b2cb10a3a2e7c4f881ff835ba3fb05
+  - enabled: 1
+    path: Assets/ForMe/scenes/MainGame3.unity
+    guid: bb7dcc34e2154494eb24b982650ebf4d
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 3b8b6be789b684a3fbd62e1b001ca2f2, type: 2}
