@@ -467,7 +467,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 1.1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -9869,6 +9869,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1974593502}
   - component: {fileID: 1974593503}
+  - component: {fileID: 1974593504}
   m_Layer: 0
   m_Name: spawn
   m_TagString: Untagged
@@ -9904,7 +9905,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   customModeDirectory: evrooms
-  luaScriptName: spawn2.lua
+  luaScriptName: spawn.lua
+  injections: []
+  UsePhoton: 0
+--- !u!114 &1974593504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974593501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e904c826ded3443cad57e2692e178b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  customModeDirectory: evrooms
+  luaScriptName: MainGameplay2.lua
   injections: []
   UsePhoton: 0
 --- !u!1 &1977410389
