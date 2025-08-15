@@ -10,6 +10,7 @@ function Start()
   CS.UnityEngine.Vector3(8.12, 1, -6.77), 
   CS.UnityEngine.Vector3(-2.23, 1, -30.63),
   CS.UnityEngine.Vector3(-10.8, 1, -23.76),
+  CS.UnityEngine.Vector3(11.68, 1, -23.39),
  }
 
  local SpawnNum = math.random(1, #spawnPoints)
