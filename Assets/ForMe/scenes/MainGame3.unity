@@ -9921,7 +9921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   customModeDirectory: evrooms
-  luaScriptName: MainGameplay3.lua
+  luaScriptName: 60seconds3.lua
   injections: []
   UsePhoton: 0
 --- !u!1 &1977410389
