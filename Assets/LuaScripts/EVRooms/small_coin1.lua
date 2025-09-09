@@ -23,8 +23,6 @@ function Start()
     end
 end
 
--- Функция Update
-function Update()
     -- Проверяем, есть ли у нас ссылка на Transform объекта
     if billboardTransform then
         -- Получаем игрока (EVR.Player должен существовать)
@@ -34,9 +32,9 @@ function Update()
             local playerTransform = player:GetComponent(typeof(CS.UnityEngine.Transform))
             if playerTransform then
                 -- Заставляем объект смотреть на позицию игрока
-                -- Это и есть поведение "билборд" - поворот по всем трем осям
-                billboardTransform:LookAt(playerTransform)
-                -- Альтернатива: billboardTransform:LookAt(playerTransform.position)
+                function FixedUpdate() -- Это и есть поведение "билборд" - поворот по всем трем осям
+                 billboardTransform:LookAt(playerTransform)
+                end   -- Альтернатива: billboardTransform:LookAt(playerTransform.position)
             else
                 -- print("Could not get Player's Transform") -- Для отладки
             end
