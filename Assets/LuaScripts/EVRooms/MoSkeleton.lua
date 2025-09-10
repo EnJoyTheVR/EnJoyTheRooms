@@ -348,7 +348,7 @@ function Start()
 end
 
 -- Функция Update 
-function Update()
+function FixedUpdate()
     lastUpdateTime = lastUpdateTime + 1
     if lastUpdateTime < 12 then 
         return

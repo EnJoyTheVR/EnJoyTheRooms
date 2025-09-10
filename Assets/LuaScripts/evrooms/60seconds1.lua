@@ -60,7 +60,7 @@ function Start()
 end
 
 -- Функция Update (должна вызываться EnJoyTheVR)
-function Update()
+function FixedUpdate()
     -- Проверяем, не остановлена ли игра
     if isGameEnded then
         return -- Ничего не делаем, если игра завершена
