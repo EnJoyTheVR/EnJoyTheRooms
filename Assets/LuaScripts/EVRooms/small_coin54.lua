@@ -21,7 +21,7 @@ function Start()
     else
         CS.UnityEngine.Debug.LogWarning("Object named '" .. BILLBOARD_OBJECT_NAME .. "' not found in the scene.")
     end
-end
+
 
     -- Проверяем, есть ли у нас ссылка на Transform объекта
     if billboardTransform then
