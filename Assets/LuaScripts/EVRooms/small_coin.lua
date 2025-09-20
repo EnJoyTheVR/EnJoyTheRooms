@@ -1,22 +1,22 @@
 -- billboard.lua
--- Скрипт для поворота объекта к игроку (билборд)
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
 
--- === Настройки ===
--- Имя объекта, который должен быть билбордом
-local BILLBOARD_OBJECT_NAME = "SmallCoin"  -- <<< ЗАМЕНИТЕ на имя вашего объекта
+-- === пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ ===
+-- пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+local BILLBOARD_OBJECT_NAME = "SmallCoin"  -- <<< пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
 -- =================
 
--- Глобальная переменная для хранения ссылки на Transform объекта
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ Transform пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 local billboardTransform = nil
 
--- Функция Start
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ Start
 function Start()
 
-    -- Находим объект по имени при старте
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
     local billboardGO = CS.UnityEngine.GameObject.Find(BILLBOARD_OBJECT_NAME)
     if billboardGO then
-        -- Получаем его компонент Transform
+        -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ Transform
         billboardTransform = billboardGO:GetComponent(typeof(CS.UnityEngine.Transform))
     else
         CS.UnityEngine.Debug.LogWarning("Object named '" .. BILLBOARD_OBJECT_NAME .. "' not found in the scene.")
@@ -24,28 +24,28 @@ function Start()
 
 
 
-    -- Проверяем, есть ли у нас ссылка на Transform объекта
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ Transform пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     if billboardTransform then
-        -- Получаем игрока (EVR.Player должен существовать)
+        -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (EVR.Player пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
         local player = EVR.Player
         if player then
-            -- Получаем Transform игрока (обычно это камера)
+            -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ Transform пїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ)
             local playerTransform = player:GetComponent(typeof(CS.UnityEngine.Transform))
             if playerTransform then
-                -- Заставляем объект смотреть на позицию игрока
-                function FixedUpdate()-- Это и есть поведение "билборд" - поворот по всем трем осям
+                -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+                function FixedUpdate()-- пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ" - пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
                  billboardTransform:LookAt(playerTransform)
-                end     -- Альтернатива: billboardTransform:LookAt(playerTransform.position)
+                end     -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: billboardTransform:LookAt(playerTransform.position)
             else
-                -- print("Could not get Player's Transform") -- Для отладки
+                -- print("Could not get Player's Transform") -- пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
             end
         else
-            -- print("EVR.Player is nil") -- Для отладки
+            -- print("EVR.Player is nil") -- пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         end
     else
-        -- Если объект не был найден при Start, можно попробовать искать его периодически
-        -- или просто ничего не делать, если он должен быть в сцене заранее.
-        -- print("Billboard Transform is not set.") -- Для отладки
+        -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ Start, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        -- пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
+        -- print("Billboard Transform is not set.") -- пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     end
 end
 
@@ -53,6 +53,6 @@ local objectToDestroy = CS.UnityEngine.GameObject.Find("SmallCoin")
 
 function OnSmallCoin()
     
-    CS.UnityEngine.Object.Destroy(objectToDestroy)
+    CS.UnityEngine.Object.Destroy(self)
     print("1 coin Has been getted.")
 end
