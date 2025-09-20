@@ -52,7 +52,7 @@ end
 local objectToDestroy = CS.UnityEngine.GameObject.Find("SmallCoin")
 
 function OnSmallCoin()
-    -- ׃האכÿול מבתוךע
+    
     CS.UnityEngine.Object.Destroy(objectToDestroy)
     print("1 coin Has been getted.")
 end

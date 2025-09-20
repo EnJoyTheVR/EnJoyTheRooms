@@ -4,7 +4,7 @@
 -- === Настройки ИИ ===
 local walkSpeed = 1.5       
 local runSpeed = 4.0        
-local detectionRange = 8.0  
+local detectionRange = 200.0  
 local loseTime = 5.0        
 local updateInterval = 0.2  
 local danceDuration = 3.0   
