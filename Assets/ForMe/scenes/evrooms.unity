@@ -2390,6 +2390,67 @@ MonoBehaviour:
   luaScriptName: MainMenu.lua
   injections: []
   UsePhoton: 0
+--- !u!1001 &6558584376316108578
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1134883796115403414, guid: 0b67ab2b99ae74834a3828c33a18b1a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.428
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134883796115403414, guid: 0b67ab2b99ae74834a3828c33a18b1a1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.028
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134883796115403414, guid: 0b67ab2b99ae74834a3828c33a18b1a1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.033
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134883796115403414, guid: 0b67ab2b99ae74834a3828c33a18b1a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134883796115403414, guid: 0b67ab2b99ae74834a3828c33a18b1a1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134883796115403414, guid: 0b67ab2b99ae74834a3828c33a18b1a1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134883796115403414, guid: 0b67ab2b99ae74834a3828c33a18b1a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134883796115403414, guid: 0b67ab2b99ae74834a3828c33a18b1a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134883796115403414, guid: 0b67ab2b99ae74834a3828c33a18b1a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134883796115403414, guid: 0b67ab2b99ae74834a3828c33a18b1a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734827723310489617, guid: 0b67ab2b99ae74834a3828c33a18b1a1, type: 3}
+      propertyPath: m_Name
+      value: Skeleton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734827723310489617, guid: 0b67ab2b99ae74834a3828c33a18b1a1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0b67ab2b99ae74834a3828c33a18b1a1, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -2412,3 +2473,4 @@ SceneRoots:
   - {fileID: 1482310183}
   - {fileID: 1429876818}
   - {fileID: 436367864}
+  - {fileID: 6558584376316108578}
