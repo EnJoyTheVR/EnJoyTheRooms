@@ -1,0 +1,2046 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1100929801108489
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4747691919729736}
+  - component: {fileID: 114819426039432228}
+  - component: {fileID: 114901460268003489}
+  - component: {fileID: 82230828003225165}
+  m_Layer: 0
+  m_Name: Game Control
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4747691919729736
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100929801108489}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.0263261, y: 1.7078338, z: -3.4040723}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114819426039432228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100929801108489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2006330137, guid: 138b4eb11884c8b175831866fa6e3bff, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  GlobalObjectIdHash: 2099086383
+  InScenePlacedSourceGlobalObjectIdHash: 0
+  DeferredDespawnTick: 0
+  Ownership: 1
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 1
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+  SyncOwnerTransformWhenParented: 1
+  AllowOwnerToParent: 0
+--- !u!114 &114901460268003489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100929801108489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 111d9d4a6c7cc26fd0d9420252df2cc1, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  gameState: 0
+  debugMode: 0
+  systemMenu: {fileID: 0}
+  systemAudio: {fileID: 82230828003225165}
+  systemSoundBank:
+  - {fileID: 8300000, guid: 20be8f23dc2e33b4d91ba11754abd6a9, type: 3}
+  - {fileID: 8300000, guid: 59d74257448c8744f81d10e788e411c2, type: 3}
+  - {fileID: 8300000, guid: 04b2d3a79b6aaf243b123635fde0e0e8, type: 3}
+  - {fileID: 8300000, guid: 6bb5c8eb72a6f164a91a91aac2b6f3d5, type: 3}
+  - {fileID: 8300000, guid: d79c6368e223adc4ca7e2fdad7821cd2, type: 3}
+  - {fileID: 8300000, guid: 2fbeab0ada471ef42ad31c452bb85c14, type: 3}
+  - {fileID: 8300000, guid: 73173d3eec06c124e943836977fd74bb, type: 3}
+  - {fileID: 8300000, guid: 2b945cd45c8469e46becc8d1cc11e2ff, type: 3}
+  introPlayed: 0
+  localPlayerID: 0
+  gamePlayers:
+  - playerName:
+    localPlayerID: -1
+    isLocalPlayer: 0
+    playerConnectionID: 0
+    playerReady: 0
+    playerLobbySlot: 0
+    playerObject: {fileID: 0}
+    playerIsDead: 0
+    playerDots: 0
+    playerItems:
+    - itemName:
+      itemID: 0
+      itemDescription:
+      itemType: 0
+      itemCost: 0
+      itemIcon: {fileID: 0}
+      itemQuantity: 0
+      itemHasQuantity: 0
+      itemSoundBank: []
+      itemIsPlaceable: 0
+      itemSize: 0
+      itemPreview: {fileID: 0}
+      itemPrefab: {fileID: 0}
+      itemHeldPrefab: {fileID: 0}
+      itemOffhandPrefab: {fileID: 0}
+      itemThirdPrefab: {fileID: 0}
+      itemThirdOffhandPrefab: {fileID: 0}
+      itemDrawAnim:
+      hasTpAnimation: 0
+      playerMask: {fileID: 0}
+      itemCanBeEquipped: 1
+      itemIsAutomatic: 0
+      itemContextualPrimary:
+      itemContextualSecondary:
+    - itemName:
+      itemID: 0
+      itemDescription:
+      itemType: 0
+      itemCost: 0
+      itemIcon: {fileID: 0}
+      itemQuantity: 0
+      itemHasQuantity: 0
+      itemSoundBank: []
+      itemIsPlaceable: 0
+      itemSize: 0
+      itemPreview: {fileID: 0}
+      itemPrefab: {fileID: 0}
+      itemHeldPrefab: {fileID: 0}
+      itemOffhandPrefab: {fileID: 0}
+      itemThirdPrefab: {fileID: 0}
+      itemThirdOffhandPrefab: {fileID: 0}
+      itemDrawAnim:
+      hasTpAnimation: 0
+      playerMask: {fileID: 0}
+      itemCanBeEquipped: 1
+      itemIsAutomatic: 0
+      itemContextualPrimary:
+      itemContextualSecondary:
+    - itemName:
+      itemID: 0
+      itemDescription:
+      itemType: 0
+      itemCost: 0
+      itemIcon: {fileID: 0}
+      itemQuantity: 0
+      itemHasQuantity: 0
+      itemSoundBank: []
+      itemIsPlaceable: 0
+      itemSize: 0
+      itemPreview: {fileID: 0}
+      itemPrefab: {fileID: 0}
+      itemHeldPrefab: {fileID: 0}
+      itemOffhandPrefab: {fileID: 0}
+      itemThirdPrefab: {fileID: 0}
+      itemThirdOffhandPrefab: {fileID: 0}
+      itemDrawAnim:
+      hasTpAnimation: 0
+      playerMask: {fileID: 0}
+      itemCanBeEquipped: 1
+      itemIsAutomatic: 0
+      itemContextualPrimary:
+      itemContextualSecondary:
+    - itemName:
+      itemID: 0
+      itemDescription:
+      itemType: 0
+      itemCost: 0
+      itemIcon: {fileID: 0}
+      itemQuantity: 0
+      itemHasQuantity: 0
+      itemSoundBank: []
+      itemIsPlaceable: 0
+      itemSize: 0
+      itemPreview: {fileID: 0}
+      itemPrefab: {fileID: 0}
+      itemHeldPrefab: {fileID: 0}
+      itemOffhandPrefab: {fileID: 0}
+      itemThirdPrefab: {fileID: 0}
+      itemThirdOffhandPrefab: {fileID: 0}
+      itemDrawAnim:
+      hasTpAnimation: 0
+      playerMask: {fileID: 0}
+      itemCanBeEquipped: 1
+      itemIsAutomatic: 0
+      itemContextualPrimary:
+      itemContextualSecondary:
+    steamID: 0
+    playerAvatar: {fileID: 0}
+    playerSoundClips: []
+    playerScore: 0
+    playerTeam: -1
+    headCosmetic: -1
+    chestCosmetic: -1
+    suitColor: {r: 0, g: 0, b: 0, a: 0}
+  - playerName:
+    localPlayerID: -1
+    isLocalPlayer: 0
+    playerConnectionID: 0
+    playerReady: 0
+    playerLobbySlot: 0
+    playerObject: {fileID: 0}
+    playerIsDead: 0
+    playerDots: 0
+    playerItems:
+    - itemName:
+      itemID: 0
+      itemDescription:
+      itemType: 0
+      itemCost: 0
+      itemIcon: {fileID: 0}
+      itemQuantity: 0
+      itemHasQuantity: 0
+      itemSoundBank: []
+      itemIsPlaceable: 0
+      itemSize: 0
+      itemPreview: {fileID: 0}
+      itemPrefab: {fileID: 0}
+      itemHeldPrefab: {fileID: 0}
+      itemOffhandPrefab: {fileID: 0}
+      itemThirdPrefab: {fileID: 0}
+      itemThirdOffhandPrefab: {fileID: 0}
+      itemDrawAnim:
+      hasTpAnimation: 0
+      playerMask: {fileID: 0}
+      itemCanBeEquipped: 1
+      itemIsAutomatic: 0
+      itemContextualPrimary:
+      itemContextualSecondary:
+    - itemName:
+      itemID: 0
+      itemDescription:
+      itemType: 0
+      itemCost: 0
+      itemIcon: {fileID: 0}
+      itemQuantity: 0
+      itemHasQuantity: 0
+      itemSoundBank: []
+      itemIsPlaceable: 0
+      itemSize: 0
+      itemPreview: {fileID: 0}
+      itemPrefab: {fileID: 0}
+      itemHeldPrefab: {fileID: 0}
+      itemOffhandPrefab: {fileID: 0}
+      itemThirdPrefab: {fileID: 0}
+      itemThirdOffhandPrefab: {fileID: 0}
+      itemDrawAnim:
+      hasTpAnimation: 0
+      playerMask: {fileID: 0}
+      itemCanBeEquipped: 1
+      itemIsAutomatic: 0
+      itemContextualPrimary:
+      itemContextualSecondary:
+    - itemName:
+      itemID: 0
+      itemDescription:
+      itemType: 0
+      itemCost: 0
+      itemIcon: {fileID: 0}
+      itemQuantity: 0
+      itemHasQuantity: 0
+      itemSoundBank: []
+      itemIsPlaceable: 0
+      itemSize: 0
+      itemPreview: {fileID: 0}
+      itemPrefab: {fileID: 0}
+      itemHeldPrefab: {fileID: 0}
+      itemOffhandPrefab: {fileID: 0}
+      itemThirdPrefab: {fileID: 0}
+      itemThirdOffhandPrefab: {fileID: 0}
+      itemDrawAnim:
+      hasTpAnimation: 0
+      playerMask: {fileID: 0}
+      itemCanBeEquipped: 1
+      itemIsAutomatic: 0
+      itemContextualPrimary:
+      itemContextualSecondary:
+    - itemName:
+      itemID: 0
+      itemDescription:
+      itemType: 0
+      itemCost: 0
+      itemIcon: {fileID: 0}
+      itemQuantity: 0
+      itemHasQuantity: 0
+      itemSoundBank: []
+      itemIsPlaceable: 0
+      itemSize: 0
+      itemPreview: {fileID: 0}
+      itemPrefab: {fileID: 0}
+      itemHeldPrefab: {fileID: 0}
+      itemOffhandPrefab: {fileID: 0}
+      itemThirdPrefab: {fileID: 0}
+      itemThirdOffhandPrefab: {fileID: 0}
+      itemDrawAnim:
+      hasTpAnimation: 0
+      playerMask: {fileID: 0}
+      itemCanBeEquipped: 1
+      itemIsAutomatic: 0
+      itemContextualPrimary:
+      itemContextualSecondary:
+    steamID: 0
+    playerAvatar: {fileID: 0}
+    playerSoundClips: []
+    playerScore: 0
+    playerTeam: -1
+    headCosmetic: -1
+    chestCosmetic: -1
+    suitColor: {r: 0, g: 0, b: 0, a: 0}
+  - playerName:
+    localPlayerID: -1
+    isLocalPlayer: 0
+    playerConnectionID: 0
+    playerReady: 0
+    playerLobbySlot: 0
+    playerObject: {fileID: 0}
+    playerIsDead: 0
+    playerDots: 0
+    playerItems:
+    - itemName:
+      itemID: 0
+      itemDescription:
+      itemType: 0
+      itemCost: 0
+      itemIcon: {fileID: 0}
+      itemQuantity: 0
+      itemHasQuantity: 0
+      itemSoundBank: []
+      itemIsPlaceable: 0
+      itemSize: 0
+      itemPreview: {fileID: 0}
+      itemPrefab: {fileID: 0}
+      itemHeldPrefab: {fileID: 0}
+      itemOffhandPrefab: {fileID: 0}
+      itemThirdPrefab: {fileID: 0}
+      itemThirdOffhandPrefab: {fileID: 0}
+      itemDrawAnim:
+      hasTpAnimation: 0
+      playerMask: {fileID: 0}
+      itemCanBeEquipped: 1
+      itemIsAutomatic: 0
+      itemContextualPrimary:
+      itemContextualSecondary:
+    - itemName:
+      itemID: 0
+      itemDescription:
+      itemType: 0
+      itemCost: 0
+      itemIcon: {fileID: 0}
+      itemQuantity: 0
+      itemHasQuantity: 0
+      itemSoundBank: []
+      itemIsPlaceable: 0
+      itemSize: 0
+      itemPreview: {fileID: 0}
+      itemPrefab: {fileID: 0}
+      itemHeldPrefab: {fileID: 0}
+      itemOffhandPrefab: {fileID: 0}
+      itemThirdPrefab: {fileID: 0}
+      itemThirdOffhandPrefab: {fileID: 0}
+      itemDrawAnim:
+      hasTpAnimation: 0
+      playerMask: {fileID: 0}
+      itemCanBeEquipped: 1
+      itemIsAutomatic: 0
+      itemContextualPrimary:
+      itemContextualSecondary:
+    - itemName:
+      itemID: 0
+      itemDescription:
+      itemType: 0
+      itemCost: 0
+      itemIcon: {fileID: 0}
+      itemQuantity: 0
+      itemHasQuantity: 0
+      itemSoundBank: []
+      itemIsPlaceable: 0
+      itemSize: 0
+      itemPreview: {fileID: 0}
+      itemPrefab: {fileID: 0}
+      itemHeldPrefab: {fileID: 0}
+      itemOffhandPrefab: {fileID: 0}
+      itemThirdPrefab: {fileID: 0}
+      itemThirdOffhandPrefab: {fileID: 0}
+      itemDrawAnim:
+      hasTpAnimation: 0
+      playerMask: {fileID: 0}
+      itemCanBeEquipped: 1
+      itemIsAutomatic: 0
+      itemContextualPrimary:
+      itemContextualSecondary:
+    - itemName:
+      itemID: 0
+      itemDescription:
+      itemType: 0
+      itemCost: 0
+      itemIcon: {fileID: 0}
+      itemQuantity: 0
+      itemHasQuantity: 0
+      itemSoundBank: []
+      itemIsPlaceable: 0
+      itemSize: 0
+      itemPreview: {fileID: 0}
+      itemPrefab: {fileID: 0}
+      itemHeldPrefab: {fileID: 0}
+      itemOffhandPrefab: {fileID: 0}
+      itemThirdPrefab: {fileID: 0}
+      itemThirdOffhandPrefab: {fileID: 0}
+      itemDrawAnim:
+      hasTpAnimation: 0
+      playerMask: {fileID: 0}
+      itemCanBeEquipped: 1
+      itemIsAutomatic: 0
+      itemContextualPrimary:
+      itemContextualSecondary:
+    steamID: 0
+    playerAvatar: {fileID: 0}
+    playerSoundClips: []
+    playerScore: 0
+    playerTeam: -1
+    headCosmetic: -1
+    chestCosmetic: -1
+    suitColor: {r: 0, g: 0, b: 0, a: 0}
+  - playerName:
+    localPlayerID: -1
+    isLocalPlayer: 0
+    playerConnectionID: 0
+    playerReady: 0
+    playerLobbySlot: 0
+    playerObject: {fileID: 0}
+    playerIsDead: 0
+    playerDots: 0
+    playerItems:
+    - itemName:
+      itemID: 0
+      itemDescription:
+      itemType: 0
+      itemCost: 0
+      itemIcon: {fileID: 0}
+      itemQuantity: 0
+      itemHasQuantity: 0
+      itemSoundBank: []
+      itemIsPlaceable: 0
+      itemSize: 0
+      itemPreview: {fileID: 0}
+      itemPrefab: {fileID: 0}
+      itemHeldPrefab: {fileID: 0}
+      itemOffhandPrefab: {fileID: 0}
+      itemThirdPrefab: {fileID: 0}
+      itemThirdOffhandPrefab: {fileID: 0}
+      itemDrawAnim:
+      hasTpAnimation: 0
+      playerMask: {fileID: 0}
+      itemCanBeEquipped: 1
+      itemIsAutomatic: 0
+      itemContextualPrimary:
+      itemContextualSecondary:
+    - itemName:
+      itemID: 0
+      itemDescription:
+      itemType: 0
+      itemCost: 0
+      itemIcon: {fileID: 0}
+      itemQuantity: 0
+      itemHasQuantity: 0
+      itemSoundBank: []
+      itemIsPlaceable: 0
+      itemSize: 0
+      itemPreview: {fileID: 0}
+      itemPrefab: {fileID: 0}
+      itemHeldPrefab: {fileID: 0}
+      itemOffhandPrefab: {fileID: 0}
+      itemThirdPrefab: {fileID: 0}
+      itemThirdOffhandPrefab: {fileID: 0}
+      itemDrawAnim:
+      hasTpAnimation: 0
+      playerMask: {fileID: 0}
+      itemCanBeEquipped: 1
+      itemIsAutomatic: 0
+      itemContextualPrimary:
+      itemContextualSecondary:
+    - itemName:
+      itemID: 0
+      itemDescription:
+      itemType: 0
+      itemCost: 0
+      itemIcon: {fileID: 0}
+      itemQuantity: 0
+      itemHasQuantity: 0
+      itemSoundBank: []
+      itemIsPlaceable: 0
+      itemSize: 0
+      itemPreview: {fileID: 0}
+      itemPrefab: {fileID: 0}
+      itemHeldPrefab: {fileID: 0}
+      itemOffhandPrefab: {fileID: 0}
+      itemThirdPrefab: {fileID: 0}
+      itemThirdOffhandPrefab: {fileID: 0}
+      itemDrawAnim:
+      hasTpAnimation: 0
+      playerMask: {fileID: 0}
+      itemCanBeEquipped: 1
+      itemIsAutomatic: 0
+      itemContextualPrimary:
+      itemContextualSecondary:
+    - itemName:
+      itemID: 0
+      itemDescription:
+      itemType: 0
+      itemCost: 0
+      itemIcon: {fileID: 0}
+      itemQuantity: 0
+      itemHasQuantity: 0
+      itemSoundBank: []
+      itemIsPlaceable: 0
+      itemSize: 0
+      itemPreview: {fileID: 0}
+      itemPrefab: {fileID: 0}
+      itemHeldPrefab: {fileID: 0}
+      itemOffhandPrefab: {fileID: 0}
+      itemThirdPrefab: {fileID: 0}
+      itemThirdOffhandPrefab: {fileID: 0}
+      itemDrawAnim:
+      hasTpAnimation: 0
+      playerMask: {fileID: 0}
+      itemCanBeEquipped: 1
+      itemIsAutomatic: 0
+      itemContextualPrimary:
+      itemContextualSecondary:
+    steamID: 0
+    playerAvatar: {fileID: 0}
+    playerSoundClips: []
+    playerScore: 0
+    playerTeam: -1
+    headCosmetic: -1
+    chestCosmetic: -1
+    suitColor: {r: 0, g: 0, b: 0, a: 0}
+  - playerName:
+    localPlayerID: -1
+    isLocalPlayer: 0
+    playerConnectionID: 0
+    playerReady: 0
+    playerLobbySlot: 0
+    playerObject: {fileID: 0}
+    playerIsDead: 0
+    playerDots: 0
+    playerItems:
+    - itemName:
+      itemID: 0
+      itemDescription:
+      itemType: 0
+      itemCost: 0
+      itemIcon: {fileID: 0}
+      itemQuantity: 0
+      itemHasQuantity: 0
+      itemSoundBank: []
+      itemIsPlaceable: 0
+      itemSize: 0
+      itemPreview: {fileID: 0}
+      itemPrefab: {fileID: 0}
+      itemHeldPrefab: {fileID: 0}
+      itemOffhandPrefab: {fileID: 0}
+      itemThirdPrefab: {fileID: 0}
+      itemThirdOffhandPrefab: {fileID: 0}
+      itemDrawAnim:
+      hasTpAnimation: 0
+      playerMask: {fileID: 0}
+      itemCanBeEquipped: 1
+      itemIsAutomatic: 0
+      itemContextualPrimary:
+      itemContextualSecondary:
+    - itemName:
+      itemID: 0
+      itemDescription:
+      itemType: 0
+      itemCost: 0
+      itemIcon: {fileID: 0}
+      itemQuantity: 0
+      itemHasQuantity: 0
+      itemSoundBank: []
+      itemIsPlaceable: 0
+      itemSize: 0
+      itemPreview: {fileID: 0}
+      itemPrefab: {fileID: 0}
+      itemHeldPrefab: {fileID: 0}
+      itemOffhandPrefab: {fileID: 0}
+      itemThirdPrefab: {fileID: 0}
+      itemThirdOffhandPrefab: {fileID: 0}
+      itemDrawAnim:
+      hasTpAnimation: 0
+      playerMask: {fileID: 0}
+      itemCanBeEquipped: 1
+      itemIsAutomatic: 0
+      itemContextualPrimary:
+      itemContextualSecondary:
+    - itemName:
+      itemID: 0
+      itemDescription:
+      itemType: 0
+      itemCost: 0
+      itemIcon: {fileID: 0}
+      itemQuantity: 0
+      itemHasQuantity: 0
+      itemSoundBank: []
+      itemIsPlaceable: 0
+      itemSize: 0
+      itemPreview: {fileID: 0}
+      itemPrefab: {fileID: 0}
+      itemHeldPrefab: {fileID: 0}
+      itemOffhandPrefab: {fileID: 0}
+      itemThirdPrefab: {fileID: 0}
+      itemThirdOffhandPrefab: {fileID: 0}
+      itemDrawAnim:
+      hasTpAnimation: 0
+      playerMask: {fileID: 0}
+      itemCanBeEquipped: 1
+      itemIsAutomatic: 0
+      itemContextualPrimary:
+      itemContextualSecondary:
+    - itemName:
+      itemID: 0
+      itemDescription:
+      itemType: 0
+      itemCost: 0
+      itemIcon: {fileID: 0}
+      itemQuantity: 0
+      itemHasQuantity: 0
+      itemSoundBank: []
+      itemIsPlaceable: 0
+      itemSize: 0
+      itemPreview: {fileID: 0}
+      itemPrefab: {fileID: 0}
+      itemHeldPrefab: {fileID: 0}
+      itemOffhandPrefab: {fileID: 0}
+      itemThirdPrefab: {fileID: 0}
+      itemThirdOffhandPrefab: {fileID: 0}
+      itemDrawAnim:
+      hasTpAnimation: 0
+      playerMask: {fileID: 0}
+      itemCanBeEquipped: 1
+      itemIsAutomatic: 0
+      itemContextualPrimary:
+      itemContextualSecondary:
+    steamID: 0
+    playerAvatar: {fileID: 0}
+    playerSoundClips: []
+    playerScore: 0
+    playerTeam: -1
+    headCosmetic: -1
+    chestCosmetic: -1
+    suitColor: {r: 0, g: 0, b: 0, a: 0}
+  - playerName:
+    localPlayerID: -1
+    isLocalPlayer: 0
+    playerConnectionID: 0
+    playerReady: 0
+    playerLobbySlot: 0
+    playerObject: {fileID: 0}
+    playerIsDead: 0
+    playerDots: 0
+    playerItems:
+    - itemName:
+      itemID: 0
+      itemDescription:
+      itemType: 0
+      itemCost: 0
+      itemIcon: {fileID: 0}
+      itemQuantity: 0
+      itemHasQuantity: 0
+      itemSoundBank: []
+      itemIsPlaceable: 0
+      itemSize: 0
+      itemPreview: {fileID: 0}
+      itemPrefab: {fileID: 0}
+      itemHeldPrefab: {fileID: 0}
+      itemOffhandPrefab: {fileID: 0}
+      itemThirdPrefab: {fileID: 0}
+      itemThirdOffhandPrefab: {fileID: 0}
+      itemDrawAnim:
+      hasTpAnimation: 0
+      playerMask: {fileID: 0}
+      itemCanBeEquipped: 1
+      itemIsAutomatic: 0
+      itemContextualPrimary:
+      itemContextualSecondary:
+    - itemName:
+      itemID: 0
+      itemDescription:
+      itemType: 0
+      itemCost: 0
+      itemIcon: {fileID: 0}
+      itemQuantity: 0
+      itemHasQuantity: 0
+      itemSoundBank: []
+      itemIsPlaceable: 0
+      itemSize: 0
+      itemPreview: {fileID: 0}
+      itemPrefab: {fileID: 0}
+      itemHeldPrefab: {fileID: 0}
+      itemOffhandPrefab: {fileID: 0}
+      itemThirdPrefab: {fileID: 0}
+      itemThirdOffhandPrefab: {fileID: 0}
+      itemDrawAnim:
+      hasTpAnimation: 0
+      playerMask: {fileID: 0}
+      itemCanBeEquipped: 1
+      itemIsAutomatic: 0
+      itemContextualPrimary:
+      itemContextualSecondary:
+    - itemName:
+      itemID: 0
+      itemDescription:
+      itemType: 0
+      itemCost: 0
+      itemIcon: {fileID: 0}
+      itemQuantity: 0
+      itemHasQuantity: 0
+      itemSoundBank: []
+      itemIsPlaceable: 0
+      itemSize: 0
+      itemPreview: {fileID: 0}
+      itemPrefab: {fileID: 0}
+      itemHeldPrefab: {fileID: 0}
+      itemOffhandPrefab: {fileID: 0}
+      itemThirdPrefab: {fileID: 0}
+      itemThirdOffhandPrefab: {fileID: 0}
+      itemDrawAnim:
+      hasTpAnimation: 0
+      playerMask: {fileID: 0}
+      itemCanBeEquipped: 1
+      itemIsAutomatic: 0
+      itemContextualPrimary:
+      itemContextualSecondary:
+    - itemName:
+      itemID: 0
+      itemDescription:
+      itemType: 0
+      itemCost: 0
+      itemIcon: {fileID: 0}
+      itemQuantity: 0
+      itemHasQuantity: 0
+      itemSoundBank: []
+      itemIsPlaceable: 0
+      itemSize: 0
+      itemPreview: {fileID: 0}
+      itemPrefab: {fileID: 0}
+      itemHeldPrefab: {fileID: 0}
+      itemOffhandPrefab: {fileID: 0}
+      itemThirdPrefab: {fileID: 0}
+      itemThirdOffhandPrefab: {fileID: 0}
+      itemDrawAnim:
+      hasTpAnimation: 0
+      playerMask: {fileID: 0}
+      itemCanBeEquipped: 1
+      itemIsAutomatic: 0
+      itemContextualPrimary:
+      itemContextualSecondary:
+    steamID: 0
+    playerAvatar: {fileID: 0}
+    playerSoundClips: []
+    playerScore: 0
+    playerTeam: -1
+    headCosmetic: -1
+    chestCosmetic: -1
+    suitColor: {r: 0, g: 0, b: 0, a: 0}
+  - playerName:
+    localPlayerID: -1
+    isLocalPlayer: 0
+    playerConnectionID: 0
+    playerReady: 0
+    playerLobbySlot: 0
+    playerObject: {fileID: 0}
+    playerIsDead: 0
+    playerDots: 0
+    playerItems:
+    - itemName:
+      itemID: 0
+      itemDescription:
+      itemType: 0
+      itemCost: 0
+      itemIcon: {fileID: 0}
+      itemQuantity: 0
+      itemHasQuantity: 0
+      itemSoundBank: []
+      itemIsPlaceable: 0
+      itemSize: 0
+      itemPreview: {fileID: 0}
+      itemPrefab: {fileID: 0}
+      itemHeldPrefab: {fileID: 0}
+      itemOffhandPrefab: {fileID: 0}
+      itemThirdPrefab: {fileID: 0}
+      itemThirdOffhandPrefab: {fileID: 0}
+      itemDrawAnim:
+      hasTpAnimation: 0
+      playerMask: {fileID: 0}
+      itemCanBeEquipped: 1
+      itemIsAutomatic: 0
+      itemContextualPrimary:
+      itemContextualSecondary:
+    - itemName:
+      itemID: 0
+      itemDescription:
+      itemType: 0
+      itemCost: 0
+      itemIcon: {fileID: 0}
+      itemQuantity: 0
+      itemHasQuantity: 0
+      itemSoundBank: []
+      itemIsPlaceable: 0
+      itemSize: 0
+      itemPreview: {fileID: 0}
+      itemPrefab: {fileID: 0}
+      itemHeldPrefab: {fileID: 0}
+      itemOffhandPrefab: {fileID: 0}
+      itemThirdPrefab: {fileID: 0}
+      itemThirdOffhandPrefab: {fileID: 0}
+      itemDrawAnim:
+      hasTpAnimation: 0
+      playerMask: {fileID: 0}
+      itemCanBeEquipped: 1
+      itemIsAutomatic: 0
+      itemContextualPrimary:
+      itemContextualSecondary:
+    - itemName:
+      itemID: 0
+      itemDescription:
+      itemType: 0
+      itemCost: 0
+      itemIcon: {fileID: 0}
+      itemQuantity: 0
+      itemHasQuantity: 0
+      itemSoundBank: []
+      itemIsPlaceable: 0
+      itemSize: 0
+      itemPreview: {fileID: 0}
+      itemPrefab: {fileID: 0}
+      itemHeldPrefab: {fileID: 0}
+      itemOffhandPrefab: {fileID: 0}
+      itemThirdPrefab: {fileID: 0}
+      itemThirdOffhandPrefab: {fileID: 0}
+      itemDrawAnim:
+      hasTpAnimation: 0
+      playerMask: {fileID: 0}
+      itemCanBeEquipped: 1
+      itemIsAutomatic: 0
+      itemContextualPrimary:
+      itemContextualSecondary:
+    - itemName:
+      itemID: 0
+      itemDescription:
+      itemType: 0
+      itemCost: 0
+      itemIcon: {fileID: 0}
+      itemQuantity: 0
+      itemHasQuantity: 0
+      itemSoundBank: []
+      itemIsPlaceable: 0
+      itemSize: 0
+      itemPreview: {fileID: 0}
+      itemPrefab: {fileID: 0}
+      itemHeldPrefab: {fileID: 0}
+      itemOffhandPrefab: {fileID: 0}
+      itemThirdPrefab: {fileID: 0}
+      itemThirdOffhandPrefab: {fileID: 0}
+      itemDrawAnim:
+      hasTpAnimation: 0
+      playerMask: {fileID: 0}
+      itemCanBeEquipped: 1
+      itemIsAutomatic: 0
+      itemContextualPrimary:
+      itemContextualSecondary:
+    steamID: 0
+    playerAvatar: {fileID: 0}
+    playerSoundClips: []
+    playerScore: 0
+    playerTeam: -1
+    headCosmetic: -1
+    chestCosmetic: -1
+    suitColor: {r: 0, g: 0, b: 0, a: 0}
+  - playerName:
+    localPlayerID: -1
+    isLocalPlayer: 0
+    playerConnectionID: 0
+    playerReady: 0
+    playerLobbySlot: 0
+    playerObject: {fileID: 0}
+    playerIsDead: 0
+    playerDots: 0
+    playerItems:
+    - itemName:
+      itemID: 0
+      itemDescription:
+      itemType: 0
+      itemCost: 0
+      itemIcon: {fileID: 0}
+      itemQuantity: 0
+      itemHasQuantity: 0
+      itemSoundBank: []
+      itemIsPlaceable: 0
+      itemSize: 0
+      itemPreview: {fileID: 0}
+      itemPrefab: {fileID: 0}
+      itemHeldPrefab: {fileID: 0}
+      itemOffhandPrefab: {fileID: 0}
+      itemThirdPrefab: {fileID: 0}
+      itemThirdOffhandPrefab: {fileID: 0}
+      itemDrawAnim:
+      hasTpAnimation: 0
+      playerMask: {fileID: 0}
+      itemCanBeEquipped: 1
+      itemIsAutomatic: 0
+      itemContextualPrimary:
+      itemContextualSecondary:
+    - itemName:
+      itemID: 0
+      itemDescription:
+      itemType: 0
+      itemCost: 0
+      itemIcon: {fileID: 0}
+      itemQuantity: 0
+      itemHasQuantity: 0
+      itemSoundBank: []
+      itemIsPlaceable: 0
+      itemSize: 0
+      itemPreview: {fileID: 0}
+      itemPrefab: {fileID: 0}
+      itemHeldPrefab: {fileID: 0}
+      itemOffhandPrefab: {fileID: 0}
+      itemThirdPrefab: {fileID: 0}
+      itemThirdOffhandPrefab: {fileID: 0}
+      itemDrawAnim:
+      hasTpAnimation: 0
+      playerMask: {fileID: 0}
+      itemCanBeEquipped: 1
+      itemIsAutomatic: 0
+      itemContextualPrimary:
+      itemContextualSecondary:
+    - itemName:
+      itemID: 0
+      itemDescription:
+      itemType: 0
+      itemCost: 0
+      itemIcon: {fileID: 0}
+      itemQuantity: 0
+      itemHasQuantity: 0
+      itemSoundBank: []
+      itemIsPlaceable: 0
+      itemSize: 0
+      itemPreview: {fileID: 0}
+      itemPrefab: {fileID: 0}
+      itemHeldPrefab: {fileID: 0}
+      itemOffhandPrefab: {fileID: 0}
+      itemThirdPrefab: {fileID: 0}
+      itemThirdOffhandPrefab: {fileID: 0}
+      itemDrawAnim:
+      hasTpAnimation: 0
+      playerMask: {fileID: 0}
+      itemCanBeEquipped: 1
+      itemIsAutomatic: 0
+      itemContextualPrimary:
+      itemContextualSecondary:
+    - itemName:
+      itemID: 0
+      itemDescription:
+      itemType: 0
+      itemCost: 0
+      itemIcon: {fileID: 0}
+      itemQuantity: 0
+      itemHasQuantity: 0
+      itemSoundBank: []
+      itemIsPlaceable: 0
+      itemSize: 0
+      itemPreview: {fileID: 0}
+      itemPrefab: {fileID: 0}
+      itemHeldPrefab: {fileID: 0}
+      itemOffhandPrefab: {fileID: 0}
+      itemThirdPrefab: {fileID: 0}
+      itemThirdOffhandPrefab: {fileID: 0}
+      itemDrawAnim:
+      hasTpAnimation: 0
+      playerMask: {fileID: 0}
+      itemCanBeEquipped: 1
+      itemIsAutomatic: 0
+      itemContextualPrimary:
+      itemContextualSecondary:
+    steamID: 0
+    playerAvatar: {fileID: 0}
+    playerSoundClips: []
+    playerScore: 0
+    playerTeam: -1
+    headCosmetic: -1
+    chestCosmetic: -1
+    suitColor: {r: 0, g: 0, b: 0, a: 0}
+  sceneHUD: {fileID: 0}
+  playerScript: {fileID: 0}
+  mainCam: {fileID: 0}
+  gameControls: {fileID: 11400000, guid: 8e53475b1d05c8143b2f4a827728c049, type: 2}
+  moveInput: {x: 0, y: 0}
+  lookInput: {x: 0, y: 0}
+  kbMoveInput: {x: 0, y: 0}
+  gpMoveInput: {x: 0, y: 0}
+  kbLookInput: {x: 0, y: 0}
+  gpLookInput: {x: 0, y: 0}
+  gpLookInputRaw: {x: 0, y: 0}
+  kbLookInputRaw: {x: 0, y: 0}
+  gpMoveInputRaw: {x: 0, y: 0}
+  kbLookAction:
+    m_Name: Kb Look
+    m_Type: 0
+    m_ExpectedControlType: Vector2
+    m_Id: 9e3ad86b-5d9e-4548-87da-6a8fe4bee54a
+    m_Processors:
+    m_Interactions:
+    m_SingletonActionBindings:
+    - m_Name:
+      m_Id: 7d57f35f-a782-487e-bd04-edf883dd0b57
+      m_Path: '<Mouse>/delta'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Kb Look
+      m_Flags: 0
+    m_Flags: 0
+  gpLookAction:
+    m_Name: Gp Look
+    m_Type: 0
+    m_ExpectedControlType: Vector2
+    m_Id: f7927c32-7454-4499-924d-d2c794d5a325
+    m_Processors:
+    m_Interactions:
+    m_SingletonActionBindings:
+    - m_Name:
+      m_Id: 89a0c1b6-05d3-4a6f-a23a-35a4ce7ce929
+      m_Path: '<Gamepad>/rightStick'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Gp Look
+      m_Flags: 0
+    m_Flags: 0
+  gpMoveAction:
+    m_Name: Gp Move
+    m_Type: 0
+    m_ExpectedControlType: Vector2
+    m_Id: 0753a403-f4d4-4b5a-81d5-776f8008bad1
+    m_Processors:
+    m_Interactions:
+    m_SingletonActionBindings:
+    - m_Name:
+      m_Id: d5f4bbb5-5719-4356-a421-2bbc97986153
+      m_Path: '<Gamepad>/leftStick'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Gp Move
+      m_Flags: 0
+    m_Flags: 0
+  controlScheme: 0
+  systemMessages: []
+  dialogOnMain: 0
+  dialogOnMainText:
+  statusTable:
+  - statusType: 0
+    statusName: Shot
+    statusDescription: You've been shot!
+    statusLength: 240
+    statusMaxLength: 240
+    statusIcon: {fileID: 21300000, guid: b02853ea42590b64fa6bf6cc4b344c04, type: 2}
+    statusMoveModifier: 0.5
+    statusStaminaRegenModifier: 1
+    statusStaminaDrainModifier: 1
+    statusPainModifier: 0.5
+    statusFlashModifier: 0
+    statusIsNumb: 0
+  - statusType: 1
+    statusName: Glue'd
+    statusDescription: You stepped in glue!
+    statusLength: 600
+    statusMaxLength: 600
+    statusIcon: {fileID: 21300000, guid: 9377e5f29bed6e047b6cb7c795968f6c, type: 2}
+    statusMoveModifier: 0.65
+    statusStaminaRegenModifier: 1
+    statusStaminaDrainModifier: 1
+    statusPainModifier: 0
+    statusFlashModifier: 0
+    statusIsNumb: 0
+  - statusType: 2
+    statusName: Energy Shot
+    statusDescription: You're amped up!
+    statusLength: 600
+    statusMaxLength: 600
+    statusIcon: {fileID: 21300000, guid: bc8257c8919c5004db6bfb021da88e40, type: 2}
+    statusMoveModifier: 1
+    statusStaminaRegenModifier: 2
+    statusStaminaDrainModifier: 0
+    statusPainModifier: 0
+    statusFlashModifier: 0
+    statusIsNumb: 0
+  - statusType: 3
+    statusName: Shoes
+    statusDescription: Pumped-up kicks!
+    statusLength: 900
+    statusMaxLength: 900
+    statusIcon: {fileID: 21300000, guid: 9b16012a7087bb544a40c5261872e800, type: 2}
+    statusMoveModifier: 1.5
+    statusStaminaRegenModifier: 1
+    statusStaminaDrainModifier: 1
+    statusPainModifier: 0
+    statusFlashModifier: 0
+    statusIsNumb: 0
+  - statusType: 4
+    statusName: Flashed
+    statusDescription: You were counter struck
+    statusLength: 120
+    statusMaxLength: 120
+    statusIcon: {fileID: 21300000, guid: 2d6c9787b57381d4b83e9d7e841b7613, type: 2}
+    statusMoveModifier: 0.9
+    statusStaminaRegenModifier: 0.75
+    statusStaminaDrainModifier: 1
+    statusPainModifier: 0
+    statusFlashModifier: 1
+    statusIsNumb: 0
+  - statusType: 5
+    statusName: Shocked
+    statusDescription: I can't feel my arms!
+    statusLength: 360
+    statusMaxLength: 360
+    statusIcon: {fileID: 21300000, guid: 65d80ebd744a6a24cbb9509a1f15e31c, type: 2}
+    statusMoveModifier: 1
+    statusStaminaRegenModifier: 1
+    statusStaminaDrainModifier: 1
+    statusPainModifier: 0
+    statusFlashModifier: 0
+    statusIsNumb: 1
+  - statusType: 6
+    statusName: Smoke
+    statusDescription: Somebody open a window...
+    statusLength: 30
+    statusMaxLength: 360
+    statusIcon: {fileID: 21300000, guid: f558bd419666a5b40adf3b04f6f69911, type: 2}
+    statusMoveModifier: 0.7
+    statusStaminaRegenModifier: 0
+    statusStaminaDrainModifier: 1
+    statusPainModifier: 0
+    statusFlashModifier: 0
+    statusIsNumb: 0
+  gameScript: {fileID: 0}
+  gameBoneroomsScript: {fileID: 0}
+  gameEntityHuntScript: {fileID: 0}
+  gameEscapeScript: {fileID: 0}
+  gameSkelephobiaScript: {fileID: 0}
+  steamTransport: {fileID: 0}
+  unityTransport: {fileID: 0}
+  isLocalPlayer: 1
+  hostID: 0
+  gameSeed: 0
+  lobbySpawns: []
+  lobbySpawnPoints: []
+  netMode: 0
+  connectionState: 0
+  gameMode: 1
+  teamMode: 0
+  maxPlayers: 8
+  serverVisibility: 0
+  teamColors:
+  - {r: 0.9056604, g: 0.26677573, b: 0.11534355, a: 1}
+  - {r: 0.17697577, g: 0.28697, b: 0.9150943, a: 1}
+  - {r: 0.23549305, g: 0.7924528, b: 0.3989765, a: 1}
+  - {r: 0.990566, g: 0.70899266, b: 0.11681201, a: 1}
+  - {r: 0.28920433, g: 0.87511784, b: 0.9150943, a: 1}
+  - {r: 0.39699852, g: 0.043137237, b: 0.81960785, a: 1}
+  - {r: 0.9300908, g: 0.43867922, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  winnerCheckId: 99
+  loadedScene:
+    m_Handle: 0
+  connectionIP:
+  netPlayerPrefab: {fileID: 1234369364221231, guid: 3345d3a14870d38459ea1c8be5a1fa45, type: 2}
+  masterPrefabList:
+  - {fileID: 1234369364221231, guid: 3345d3a14870d38459ea1c8be5a1fa45, type: 2}
+  - {fileID: 1483742207952306, guid: 42279c8a633854044a785d3d275bcfe4, type: 2}
+  - {fileID: 1575572786163109, guid: d9319d3129467c24697ac020c49fe415, type: 2}
+  - {fileID: 1239350664759021, guid: da8781868eaec28419b6dc7f08c9b470, type: 2}
+  - {fileID: 1914735265623566, guid: 9c65d49e267394f4c98bd1ade0816921, type: 2}
+  - {fileID: 1436417796304836, guid: 351d02cf3f1575444b649b85ab1ed46f, type: 2}
+  - {fileID: 1007979352514702, guid: 1d5f72afbfa787543a169a3a4915093e, type: 2}
+  - {fileID: 1554109076698477, guid: 5a5d9c9904d720748820fd2113e7e4f2, type: 2}
+  - {fileID: 1190816798680102, guid: 06fb5dada14cd2645919023b7d7f5e4f, type: 2}
+  - {fileID: 1490108827340404, guid: c99ad6f54686506418543f3893ae2da2, type: 2}
+  - {fileID: 1587862541713844, guid: 78ad8178b1283c84e9cf11e4955fb556, type: 2}
+  - {fileID: 1316761701547593, guid: d5cbae95a5e022f4eb31b1f0bdc1f5a7, type: 2}
+  - {fileID: 1452326931972917, guid: 0fc22120b7a8dcb409e71b90fc08cc34, type: 2}
+  - {fileID: 1231980332952021, guid: aaa9f91dde7503441a613777aaebe2fe, type: 2}
+  - {fileID: 1876915299498893, guid: dd99e07c756a1f2499456a971628b4f4, type: 2}
+  - {fileID: 1333224097964051, guid: ca434f0fcf07a414bb80054270943689, type: 2}
+  - {fileID: 1417660720430829, guid: 66b923af10ce7bd48bd5d637440a6287, type: 2}
+  - {fileID: 1683836622806339, guid: 6385cb0aed17b5148978409fe8c6d9e7, type: 2}
+  - {fileID: 1199721395491730, guid: 0f8946bd2bcaa044fb456024c896a35e, type: 2}
+  - {fileID: 1822450743778469, guid: c7a1a1ceb45ef4d4da68e28c25338e5a, type: 2}
+  - {fileID: 1235491199926654, guid: f8e58d101adc92344a60d1de32619aaf, type: 2}
+  - {fileID: 1011486883693363, guid: 5937fd8bc6af23d42933fcbdca35db25, type: 2}
+  - {fileID: 1204725666037435, guid: fc3807618de1fd3419810dbed0b7c831, type: 2}
+  - {fileID: 1452245727474359, guid: 69af9936640db0c42952508d145f748a, type: 2}
+  - {fileID: 1149819825611850, guid: eba585cc13c2ecc4d8fb0fb49156e613, type: 2}
+  - {fileID: 1741421924124551, guid: 7421fe8c4eaf18f4189019be75144491, type: 2}
+  - {fileID: 1027324386909878, guid: a3fef98d2f4751c4599ee5e71f9abab3, type: 2}
+  - {fileID: 1966774246620098, guid: fe4316620c3950e4aaf93e677665bc23, type: 2}
+  - {fileID: 1907599688583049, guid: 63d30cf68d9094b46a9eefea212b3e17, type: 2}
+  gameRules:
+    m_InternalValue:
+      deadEnds: 0
+      allowJumping: 0
+      pelletScalar: 1
+      spawnScalar: 1
+      allowTeamChange: 1
+      allowUnbalancedTeams: 1
+      winPointValue: 3
+      teamMode: 0
+      mazeSize: 13
+  prefs:
+    mouseSens: {x: 0.5, y: 0.5}
+    invertY: -1
+    headBobScale: 1
+    doJumpscares: 1
+    masterVolume: 0.75
+    musicVolume: 0.75
+    displayName: Player
+    fullScreenMode: 1
+    fov: 0.3333
+    ptt: 1
+    vSync: 1
+    allowVHS: 1
+    rebinds:
+    microphone:
+    serverName: A Bonerooms Server
+    skipIntro: 0
+    misophoniaMode: 0
+    gamepadSens: {x: 0.5, y: 0.5}
+    invertGamepadY: 0
+    glyphMode: 0
+    suitH: 0.127
+    suitS: 0.81
+    suitV: 0.93
+    headCosmetic: -1
+    customizeColor: 0
+    firstPersonEmotes: 0
+    hideSteamInfo: 0
+    playMatchMusic: 1
+  defaultInputModule: {fileID: 0}
+  itemTable:
+  - itemName: None
+    itemID: 0
+    itemDescription: Nothing
+    itemType: 0
+    itemCost: 0
+    itemIcon: {fileID: 21300000, guid: 5537bf172e996a84a8c632e770240d28, type: 2}
+    itemQuantity: 0
+    itemHasQuantity: 0
+    itemSoundBank: []
+    itemIsPlaceable: 0
+    itemSize: 0
+    itemPreview: {fileID: 0}
+    itemPrefab: {fileID: 0}
+    itemHeldPrefab: {fileID: 0}
+    itemOffhandPrefab: {fileID: 0}
+    itemThirdPrefab: {fileID: 0}
+    itemThirdOffhandPrefab: {fileID: 0}
+    itemDrawAnim:
+    hasTpAnimation: 0
+    playerMask: {fileID: 0}
+    itemCanBeEquipped: 1
+    itemIsAutomatic: 0
+    itemContextualPrimary:
+    itemContextualSecondary:
+  - itemName: Hammer
+    itemID: 1
+    itemDescription: Can be used to destroy one wall.
+    itemType: 1
+    itemCost: 15
+    itemIcon: {fileID: 21300000, guid: d257723a151adb34e8427bae0e619c3d, type: 2}
+    itemQuantity: 0
+    itemHasQuantity: 0
+    itemSoundBank: []
+    itemIsPlaceable: 0
+    itemSize: 0
+    itemPreview: {fileID: 1991983077070495, guid: dc8d1b0937a7e0f45b8959a36072ca96, type: 2}
+    itemPrefab: {fileID: 0}
+    itemHeldPrefab: {fileID: 1337206449253333, guid: c1a5e0e1ca538334e85b94563a333444, type: 2}
+    itemOffhandPrefab: {fileID: 0}
+    itemThirdPrefab: {fileID: 1616904938441807, guid: 2f26384ac5bfddb49a6780139ed95568, type: 2}
+    itemThirdOffhandPrefab: {fileID: 0}
+    itemDrawAnim: Hammer Draw
+    hasTpAnimation: 1
+    playerMask: {fileID: 0}
+    itemCanBeEquipped: 1
+    itemIsAutomatic: 0
+    itemContextualPrimary: Break Wall
+    itemContextualSecondary:
+  - itemName: Gun
+    itemID: 2
+    itemDescription: Gun
+    itemType: 2
+    itemCost: 40
+    itemIcon: {fileID: 21300000, guid: dda2d2b69f333944a9faf23465cf3dca, type: 2}
+    itemQuantity: 0
+    itemHasQuantity: 0
+    itemSoundBank:
+    - {fileID: 8300000, guid: 81ccfa18fa07f65499d38fe8c6b5a250, type: 3}
+    - {fileID: 8300000, guid: a77d28c2576ec604fb58f2f26c5d1962, type: 3}
+    itemIsPlaceable: 0
+    itemSize: 0
+    itemPreview: {fileID: 0}
+    itemPrefab: {fileID: 0}
+    itemHeldPrefab: {fileID: 1510004728266957, guid: d9a765ff243a15d428509de56cfec3ed, type: 2}
+    itemOffhandPrefab: {fileID: 0}
+    itemThirdPrefab: {fileID: 1042830656935417, guid: 5ccb88c0aa10fba4291cc1fe8a018ffa, type: 2}
+    itemThirdOffhandPrefab: {fileID: 0}
+    itemDrawAnim: Gun Draw
+    hasTpAnimation: 1
+    playerMask: {fileID: 0}
+    itemCanBeEquipped: 1
+    itemIsAutomatic: 0
+    itemContextualPrimary: Fire
+    itemContextualSecondary:
+  - itemName: Bike Horn
+    itemID: 3
+    itemDescription: A trap that alerts all nearby skeletons when stepped on.
+    itemType: 12
+    itemCost: 10
+    itemIcon: {fileID: 21300000, guid: a2970ac43f4e3e341bed5e75a98a3c33, type: 2}
+    itemQuantity: 0
+    itemHasQuantity: 0
+    itemSoundBank: []
+    itemIsPlaceable: 1
+    itemSize: 0.3
+    itemPreview: {fileID: 1169830304856685, guid: 7071ca70af5ae064abb2283087c231b6, type: 2}
+    itemPrefab: {fileID: 1220391751802562, guid: 53f0b89b3dcd1a04f91343119ffaec46, type: 2}
+    itemHeldPrefab: {fileID: 0}
+    itemOffhandPrefab: {fileID: 0}
+    itemThirdPrefab: {fileID: 1997108171135941, guid: 441902801074db440a6beca4764cca14, type: 2}
+    itemThirdOffhandPrefab: {fileID: 0}
+    itemDrawAnim:
+    hasTpAnimation: 1
+    playerMask: {fileID: 0}
+    itemCanBeEquipped: 1
+    itemIsAutomatic: 0
+    itemContextualPrimary: Place
+    itemContextualSecondary:
+  - itemName: Teleporter
+    itemID: 4
+    itemDescription: A device that teleports you to a random location within the maze.
+    itemType: 7
+    itemCost: 30
+    itemIcon: {fileID: 21300000, guid: 5652e76d4e10d7b4892c06b838859cf8, type: 2}
+    itemQuantity: 0
+    itemHasQuantity: 0
+    itemSoundBank: []
+    itemIsPlaceable: 0
+    itemSize: 0.3
+    itemPreview: {fileID: 0}
+    itemPrefab: {fileID: 0}
+    itemHeldPrefab: {fileID: 1800300402531550, guid: 47b354dfaef764e41a229b36162e23fd, type: 2}
+    itemOffhandPrefab: {fileID: 0}
+    itemThirdPrefab: {fileID: 1155076200760900, guid: 9d3d8ec82c3581444bb82c97f72b1a9d, type: 2}
+    itemThirdOffhandPrefab: {fileID: 0}
+    itemDrawAnim: Teleporter Draw
+    hasTpAnimation: 1
+    playerMask: {fileID: 0}
+    itemCanBeEquipped: 1
+    itemIsAutomatic: 0
+    itemContextualPrimary: Teleport
+    itemContextualSecondary:
+  - itemName: Speedy Shoes
+    itemID: 5
+    itemDescription: 'Running shoes that increase your run speed while equipped. '
+    itemType: 6
+    itemCost: 20
+    itemIcon: {fileID: 21300000, guid: 5909f2cc1ab9db448b3ae08bfdd4681c, type: 2}
+    itemQuantity: 1
+    itemHasQuantity: 0
+    itemSoundBank: []
+    itemIsPlaceable: 0
+    itemSize: 0.3
+    itemPreview: {fileID: 0}
+    itemPrefab: {fileID: 0}
+    itemHeldPrefab: {fileID: 0}
+    itemOffhandPrefab: {fileID: 0}
+    itemThirdPrefab: {fileID: 0}
+    itemThirdOffhandPrefab: {fileID: 0}
+    itemDrawAnim:
+    hasTpAnimation: 0
+    playerMask: {fileID: 0}
+    itemCanBeEquipped: 1
+    itemIsAutomatic: 0
+    itemContextualPrimary: Use
+    itemContextualSecondary:
+  - itemName: Energy Shot
+    itemID: 6
+    itemDescription: A thick, almondy energy shot.
+    itemType: 10
+    itemCost: 20
+    itemIcon: {fileID: 21300000, guid: c852ae43893527946b200bec25c14d8a, type: 2}
+    itemQuantity: 0
+    itemHasQuantity: 0
+    itemSoundBank: []
+    itemIsPlaceable: 0
+    itemSize: 0.3
+    itemPreview: {fileID: 0}
+    itemPrefab: {fileID: 0}
+    itemHeldPrefab: {fileID: 0}
+    itemOffhandPrefab: {fileID: 0}
+    itemThirdPrefab: {fileID: 0}
+    itemThirdOffhandPrefab: {fileID: 0}
+    itemDrawAnim:
+    hasTpAnimation: 0
+    playerMask: {fileID: 0}
+    itemCanBeEquipped: 1
+    itemIsAutomatic: 0
+    itemContextualPrimary: Drink
+    itemContextualSecondary:
+  - itemName: Glue Trap
+    itemID: 7
+    itemDescription: Sticky stuff that slows down players and skeletons
+    itemType: 4
+    itemCost: 10
+    itemIcon: {fileID: 21300000, guid: 847f2815c18659444bc864227773b97f, type: 2}
+    itemQuantity: 0
+    itemHasQuantity: 0
+    itemSoundBank: []
+    itemIsPlaceable: 1
+    itemSize: 0.3
+    itemPreview: {fileID: 1091584222871635, guid: 90bd416c4a68180409784647e01a6fa8, type: 2}
+    itemPrefab: {fileID: 1750613939753989, guid: 26c2b203d36221445827172fe261a884, type: 2}
+    itemHeldPrefab: {fileID: 0}
+    itemOffhandPrefab: {fileID: 0}
+    itemThirdPrefab: {fileID: 1917950461808419, guid: 75aada2bac0363f479db92753c28cad2, type: 2}
+    itemThirdOffhandPrefab: {fileID: 0}
+    itemDrawAnim:
+    hasTpAnimation: 1
+    playerMask: {fileID: 0}
+    itemCanBeEquipped: 1
+    itemIsAutomatic: 0
+    itemContextualPrimary: Place
+    itemContextualSecondary:
+  - itemName: Flashlight
+    itemID: 8
+    itemDescription: Standard issue photon chucker.
+    itemType: 13
+    itemCost: 10
+    itemIcon: {fileID: 21300000, guid: fa1cc91e7d6e9e94899de0b92549135b, type: 2}
+    itemQuantity: 0
+    itemHasQuantity: 0
+    itemSoundBank: []
+    itemIsPlaceable: 0
+    itemSize: 0.3
+    itemPreview: {fileID: 0}
+    itemPrefab: {fileID: 0}
+    itemHeldPrefab: {fileID: 1540292764187480, guid: 7433fe8c647965442b6f41066083aff5, type: 2}
+    itemOffhandPrefab: {fileID: 0}
+    itemThirdPrefab: {fileID: 1792959465517152, guid: 5367360f1eccc6e4890bb38fbfac0cd0, type: 2}
+    itemThirdOffhandPrefab: {fileID: 0}
+    itemDrawAnim: Flashlight Draw
+    hasTpAnimation: 0
+    playerMask: {fileID: 0}
+    itemCanBeEquipped: 1
+    itemIsAutomatic: 0
+    itemContextualPrimary:
+    itemContextualSecondary:
+  - itemName: Land Mine
+    itemID: 9
+    itemDescription: Beepy coin
+    itemType: 14
+    itemCost: 75
+    itemIcon: {fileID: 21300000, guid: af655f9a7994556408baca95e9cca1bd, type: 2}
+    itemQuantity: 0
+    itemHasQuantity: 0
+    itemSoundBank: []
+    itemIsPlaceable: 1
+    itemSize: 0.3
+    itemPreview: {fileID: 1726392030383221, guid: a04e380ebd3a2cd4883d94a4e55eaf25, type: 2}
+    itemPrefab: {fileID: 1381692756072853, guid: 7b53b1e01ccffee4bb0cea6b421a7536, type: 2}
+    itemHeldPrefab: {fileID: 0}
+    itemOffhandPrefab: {fileID: 0}
+    itemThirdPrefab: {fileID: 1337258825192622, guid: 204a64522ecd76b46ba7b0f8786cdce2, type: 2}
+    itemThirdOffhandPrefab: {fileID: 0}
+    itemDrawAnim:
+    hasTpAnimation: 1
+    playerMask: {fileID: 0}
+    itemCanBeEquipped: 1
+    itemIsAutomatic: 0
+    itemContextualPrimary: Place
+    itemContextualSecondary:
+  - itemName: Bones
+    itemID: 10
+    itemDescription: A very distracting musical instrument
+    itemType: 15
+    itemCost: 15
+    itemIcon: {fileID: 21300000, guid: b11756ce1a6f0f347a27e95b26e51e82, type: 2}
+    itemQuantity: 50
+    itemHasQuantity: 1
+    itemSoundBank: []
+    itemIsPlaceable: 0
+    itemSize: 0.3
+    itemPreview: {fileID: 0}
+    itemPrefab: {fileID: 0}
+    itemHeldPrefab: {fileID: 1162205370385800, guid: fe41d6a49959e50418dd0ae54dbb5bbc, type: 2}
+    itemOffhandPrefab: {fileID: 1104393806893909, guid: 057d24154954ddf4ead4701474910d38, type: 2}
+    itemThirdPrefab: {fileID: 1775783324290466, guid: ce212eb78732f9f4aa16a3a9438366e9, type: 2}
+    itemThirdOffhandPrefab: {fileID: 1344521404725171, guid: e9db41d81a2558341a24fd19662a7267, type: 2}
+    itemDrawAnim: Bones Draw
+    hasTpAnimation: 1
+    playerMask: {fileID: 0}
+    itemCanBeEquipped: 1
+    itemIsAutomatic: 0
+    itemContextualPrimary: Clonk
+    itemContextualSecondary: Mimic Walk
+  - itemName: Smoke Grenade
+    itemID: 11
+    itemDescription: Smoke out!
+    itemType: 16
+    itemCost: 15
+    itemIcon: {fileID: 21300000, guid: 720f5acae37f2a249b4c2a968be464ad, type: 2}
+    itemQuantity: 1
+    itemHasQuantity: 0
+    itemSoundBank: []
+    itemIsPlaceable: 0
+    itemSize: 0.3
+    itemPreview: {fileID: 0}
+    itemPrefab: {fileID: 1113169633991708, guid: 82b4d4bde44266d4b9394ad3a1922b46, type: 2}
+    itemHeldPrefab: {fileID: 1518439126605998, guid: 2ad2b6ac1cacc7a49b182e2fe1fd50f5, type: 2}
+    itemOffhandPrefab: {fileID: 0}
+    itemThirdPrefab: {fileID: 1458915438018410, guid: 4b80f5dff390f1e4298d6825ead7da7f, type: 2}
+    itemThirdOffhandPrefab: {fileID: 0}
+    itemDrawAnim: Smoke Grenade Draw
+    hasTpAnimation: 1
+    playerMask: {fileID: 0}
+    itemCanBeEquipped: 1
+    itemIsAutomatic: 0
+    itemContextualPrimary: Throw
+    itemContextualSecondary:
+  - itemName: Flash Grenade
+    itemID: 12
+    itemDescription: Flashbang!
+    itemType: 17
+    itemCost: 30
+    itemIcon: {fileID: 21300000, guid: f412d338642fc1a47b06d985f8f5da91, type: 2}
+    itemQuantity: 1
+    itemHasQuantity: 0
+    itemSoundBank: []
+    itemIsPlaceable: 0
+    itemSize: 0.3
+    itemPreview: {fileID: 0}
+    itemPrefab: {fileID: 1740363395049567, guid: e6cf4033ee47f764889ae5dc9c5673c9, type: 2}
+    itemHeldPrefab: {fileID: 1288233435424272, guid: 2c2280bed4930b34b8aac8c73a21f3eb, type: 2}
+    itemOffhandPrefab: {fileID: 0}
+    itemThirdPrefab: {fileID: 1748667203392454, guid: 0b6f706804baf15498e31f39e353df3c, type: 2}
+    itemThirdOffhandPrefab: {fileID: 0}
+    itemDrawAnim: Smoke Grenade Draw
+    hasTpAnimation: 1
+    playerMask: {fileID: 0}
+    itemCanBeEquipped: 1
+    itemIsAutomatic: 0
+    itemContextualPrimary: Throw
+    itemContextualSecondary:
+  - itemName: Trumpet
+    itemID: 13
+    itemDescription: Doot doot
+    itemType: 18
+    itemCost: 25
+    itemIcon: {fileID: 21300000, guid: 563b0c85ed531cd4d9a188914089b11e, type: 2}
+    itemQuantity: 100
+    itemHasQuantity: 1
+    itemSoundBank: []
+    itemIsPlaceable: 0
+    itemSize: 0.3
+    itemPreview: {fileID: 0}
+    itemPrefab: {fileID: 0}
+    itemHeldPrefab: {fileID: 1346908291823084, guid: 57f6aee8ec82d7949bbdb248caf10a3d, type: 2}
+    itemOffhandPrefab: {fileID: 0}
+    itemThirdPrefab: {fileID: 1398368935814589, guid: 7dccc0f0b4949f543b91c4991ec1d954, type: 2}
+    itemThirdOffhandPrefab: {fileID: 0}
+    itemDrawAnim: Trumpet Draw
+    hasTpAnimation: 1
+    playerMask: {fileID: 0}
+    itemCanBeEquipped: 1
+    itemIsAutomatic: 0
+    itemContextualPrimary: Toot
+    itemContextualSecondary: Blast
+  - itemName: Dummy
+    itemID: 14
+    itemDescription: A true fren
+    itemType: 19
+    itemCost: 45
+    itemIcon: {fileID: 21300000, guid: 58f6fd784cdb1a04cb68592a8058c980, type: 2}
+    itemQuantity: 1
+    itemHasQuantity: 0
+    itemSoundBank: []
+    itemIsPlaceable: 1
+    itemSize: 0.5
+    itemPreview: {fileID: 1007737286623102, guid: 7e0327174073a1a4096b9dccf7667509, type: 2}
+    itemPrefab: {fileID: 1771829815177822, guid: db4b0c1a1bca7ed47a1a5f1e005b92df, type: 2}
+    itemHeldPrefab: {fileID: 0}
+    itemOffhandPrefab: {fileID: 0}
+    itemThirdPrefab: {fileID: 1465862571321034, guid: e4f2b4aed03d2fa4083b6cbc0c4387a0, type: 2}
+    itemThirdOffhandPrefab: {fileID: 0}
+    itemDrawAnim:
+    hasTpAnimation: 1
+    playerMask: {fileID: 0}
+    itemCanBeEquipped: 1
+    itemIsAutomatic: 0
+    itemContextualPrimary: Place
+    itemContextualSecondary:
+  - itemName: Swap Card
+    itemID: 15
+    itemDescription: Reverse!
+    itemType: 20
+    itemCost: 35
+    itemIcon: {fileID: 21300000, guid: d4615ca59d417db4b9a001bf72994575, type: 2}
+    itemQuantity: 1
+    itemHasQuantity: 0
+    itemSoundBank: []
+    itemIsPlaceable: 1
+    itemSize: 0.5
+    itemPreview: {fileID: 1005899266597020, guid: 3e7bb1c52d1499245944daf75c670d93, type: 2}
+    itemPrefab: {fileID: 0}
+    itemHeldPrefab: {fileID: 1340225389454146, guid: fcbc20e2f7ba4ae44b665445f25e4733, type: 2}
+    itemOffhandPrefab: {fileID: 0}
+    itemThirdPrefab: {fileID: 1663028088278468, guid: 26493fe4584f17849a834e149636b9c5, type: 2}
+    itemThirdOffhandPrefab: {fileID: 0}
+    itemDrawAnim: Card Draw
+    hasTpAnimation: 1
+    playerMask: {fileID: 0}
+    itemCanBeEquipped: 1
+    itemIsAutomatic: 0
+    itemContextualPrimary: Swap Places
+    itemContextualSecondary:
+  - itemName: Defibrillator
+    itemID: 16
+    itemDescription: Clear!!
+    itemType: 21
+    itemCost: 80
+    itemIcon: {fileID: 21300000, guid: af3a5aabe7767db488b4fcddc7bd864b, type: 2}
+    itemQuantity: 1
+    itemHasQuantity: 0
+    itemSoundBank: []
+    itemIsPlaceable: 0
+    itemSize: 0.5
+    itemPreview: {fileID: 0}
+    itemPrefab: {fileID: 0}
+    itemHeldPrefab: {fileID: 1450090883064723, guid: 126bab7cd97bfb84892f61363ea87966, type: 2}
+    itemOffhandPrefab: {fileID: 1988574637525367, guid: 07820a2aa40264040889661a705ad311, type: 2}
+    itemThirdPrefab: {fileID: 1818648191093648, guid: 86655732a886cd947b77c1f98c9d4583, type: 2}
+    itemThirdOffhandPrefab: {fileID: 1879596243261234, guid: c06b811625c64a446badf0ec4b0f41bc, type: 2}
+    itemDrawAnim: Defib Draw
+    hasTpAnimation: 1
+    playerMask: {fileID: 0}
+    itemCanBeEquipped: 1
+    itemIsAutomatic: 0
+    itemContextualPrimary: Shock
+    itemContextualSecondary:
+  - itemName: Skeleton Mask
+    itemID: 17
+    itemDescription: Who could it be?
+    itemType: 22
+    itemCost: 50
+    itemIcon: {fileID: 21300000, guid: bc03c58d1826e6c4cbb2cfdb12874a07, type: 2}
+    itemQuantity: 100
+    itemHasQuantity: 1
+    itemSoundBank: []
+    itemIsPlaceable: 0
+    itemSize: 0.5
+    itemPreview: {fileID: 0}
+    itemPrefab: {fileID: 0}
+    itemHeldPrefab: {fileID: 1982317565284750, guid: f5c32bfb9ffc1794a95f01583fa9874b, type: 2}
+    itemOffhandPrefab: {fileID: 0}
+    itemThirdPrefab: {fileID: 1613347225912029, guid: aa249669f42da294c8842400f0e718eb, type: 2}
+    itemThirdOffhandPrefab: {fileID: 0}
+    itemDrawAnim: Mask Draw
+    hasTpAnimation: 1
+    playerMask: {fileID: 0}
+    itemCanBeEquipped: 1
+    itemIsAutomatic: 0
+    itemContextualPrimary: Hide
+    itemContextualSecondary:
+  - itemName: RPG
+    itemID: 18
+    itemDescription: How did this get here?
+    itemType: 23
+    itemCost: 150
+    itemIcon: {fileID: 21300000, guid: f9bef11fe82754b41a70ee526b7a356d, type: 2}
+    itemQuantity: 1
+    itemHasQuantity: 0
+    itemSoundBank: []
+    itemIsPlaceable: 0
+    itemSize: 0.5
+    itemPreview: {fileID: 0}
+    itemPrefab: {fileID: 0}
+    itemHeldPrefab: {fileID: 1310807628815733, guid: 395b0a17136febc48bcecd3181b417a7, type: 2}
+    itemOffhandPrefab: {fileID: 0}
+    itemThirdPrefab: {fileID: 1445592271518354, guid: 522412c3e54bba34f880ad577ffa2918, type: 2}
+    itemThirdOffhandPrefab: {fileID: 0}
+    itemDrawAnim: RPG Draw
+    hasTpAnimation: 1
+    playerMask: {fileID: 0}
+    itemCanBeEquipped: 1
+    itemIsAutomatic: 0
+    itemContextualPrimary: Fire
+    itemContextualSecondary:
+  - itemName: Stun Gun
+    itemID: 19
+    itemDescription: Don't tase me!
+    itemType: 24
+    itemCost: 70
+    itemIcon: {fileID: 21300000, guid: b24b348b2e0b8dd418f691c34c28b340, type: 2}
+    itemQuantity: 1
+    itemHasQuantity: 0
+    itemSoundBank: []
+    itemIsPlaceable: 0
+    itemSize: 0.5
+    itemPreview: {fileID: 0}
+    itemPrefab: {fileID: 0}
+    itemHeldPrefab: {fileID: 1119318867173374, guid: 4f2dab5bdadb8114c9f1642de006dc83, type: 2}
+    itemOffhandPrefab: {fileID: 0}
+    itemThirdPrefab: {fileID: 0}
+    itemThirdOffhandPrefab: {fileID: 0}
+    itemDrawAnim: Stun Gun Draw
+    hasTpAnimation: 1
+    playerMask: {fileID: 0}
+    itemCanBeEquipped: 0
+    itemIsAutomatic: 1
+    itemContextualPrimary:
+    itemContextualSecondary:
+  nullIcon: {fileID: 21300000, guid: 5537bf172e996a84a8c632e770240d28, type: 2}
+  mixerGroups:
+  - {fileID: 24300012, guid: 1c30b56aac13fc24588544ee4458ce2b, type: 2}
+  - {fileID: 24300016, guid: 1c30b56aac13fc24588544ee4458ce2b, type: 2}
+  - {fileID: 24300000, guid: 1c30b56aac13fc24588544ee4458ce2b, type: 2}
+  masterMixGroup: {fileID: 24300006, guid: 1c30b56aac13fc24588544ee4458ce2b, type: 2}
+  musicMixGroup: {fileID: 24300000, guid: 4aa692375f9efcd4f9e3d91b0ecd83d6, type: 2}
+  lowpassAmount: 1
+  comms: {fileID: 0}
+  glyphMode: 0
+  cosmeticsList:
+  - cosmeticName: Cowboy Hat (Leather)
+    cosmeticSlot: 0
+    cosmeticIcon: {fileID: 21300000, guid: 9b4c850dd354b4a409c8d8e4f6092f75, type: 2}
+    cosmeticPrefab: {fileID: 1631209351482015, guid: a4fa5bd09dc702d48b11c3ae180fec2c, type: 2}
+    requiresDLC: 0
+    dlcID: 0
+  - cosmeticName: Cowboy Hat (Velvet)
+    cosmeticSlot: 0
+    cosmeticIcon: {fileID: 21300000, guid: 637c532de36a0bf40a0cdf3443851f17, type: 2}
+    cosmeticPrefab: {fileID: 1463958590541765, guid: 2bae8dc721e72c54e9b17997574425d3, type: 2}
+    requiresDLC: 0
+    dlcID: 0
+  - cosmeticName: Hangover
+    cosmeticSlot: 0
+    cosmeticIcon: {fileID: 21300000, guid: 41e941c780f74124ba70a592ddda88a5, type: 2}
+    cosmeticPrefab: {fileID: 1054634338195867, guid: 919037021d6cc584da4a6d16b410abbd, type: 2}
+    requiresDLC: 0
+    dlcID: 0
+  - cosmeticName: Fez
+    cosmeticSlot: 0
+    cosmeticIcon: {fileID: 21300000, guid: 14ba6d5c8917e91498153ee751d57bfe, type: 2}
+    cosmeticPrefab: {fileID: 1973098344015072, guid: deb81d9b98c5138488db78e61bbbcf27, type: 2}
+    requiresDLC: 0
+    dlcID: 0
+  - cosmeticName: Buddy
+    cosmeticSlot: 0
+    cosmeticIcon: {fileID: 21300000, guid: 727f1821132a78c4aa507bb35a3c6e94, type: 2}
+    cosmeticPrefab: {fileID: 1551498736334898, guid: d83d20587e0bb244ba087ccdf56ab41a, type: 2}
+    requiresDLC: 0
+    dlcID: 0
+  - cosmeticName: Sheriff Buddy
+    cosmeticSlot: 0
+    cosmeticIcon: {fileID: 21300000, guid: 59c52fc1c71d79c4696011268556cf25, type: 2}
+    cosmeticPrefab: {fileID: 1202108980349957, guid: 2dcf45aa05a28514eb58233465a81350, type: 2}
+    requiresDLC: 0
+    dlcID: 0
+  - cosmeticName: Bonerooms Hat
+    cosmeticSlot: 0
+    cosmeticIcon: {fileID: 21300000, guid: 105bfafe6604bc14d8c6ca3484e67197, type: 2}
+    cosmeticPrefab: {fileID: 1195073534377117, guid: 4a44d66d1a8905a4e900ce8e861a8431, type: 2}
+    requiresDLC: 0
+    dlcID: 0
+  - cosmeticName: '#1 Boner Hat'
+    cosmeticSlot: 0
+    cosmeticIcon: {fileID: 21300000, guid: efe8231a48efec8489ceb68ca1f6c4df, type: 2}
+    cosmeticPrefab: {fileID: 1580352480343256, guid: 1360ee71a1a60d64e9f81f24fac46ea6, type: 2}
+    requiresDLC: 1
+    dlcID: 0
+  - cosmeticName: Top Hat
+    cosmeticSlot: 0
+    cosmeticIcon: {fileID: 21300000, guid: 20e729c0e8a78554a871dbe791201bf0, type: 2}
+    cosmeticPrefab: {fileID: 1814584285607377, guid: 08779980d48ba4049a9f1a222a18ee7c, type: 2}
+    requiresDLC: 0
+    dlcID: 0
+  - cosmeticName: Toppest Hat
+    cosmeticSlot: 0
+    cosmeticIcon: {fileID: 21300000, guid: e74eb0446f0b9194da9213db559c735d, type: 2}
+    cosmeticPrefab: {fileID: 1117905447004398, guid: f773cb8d5b58f1b46b66a1ef538baf69, type: 2}
+    requiresDLC: 0
+    dlcID: 0
+  - cosmeticName: Skull
+    cosmeticSlot: 0
+    cosmeticIcon: {fileID: 21300000, guid: c4b94f5cdcf90484cbd3e270879752b9, type: 2}
+    cosmeticPrefab: {fileID: 1834910100909099, guid: 876a3ca04ca42eb438ad6a8c3cc9f6b8, type: 2}
+    requiresDLC: 0
+    dlcID: 0
+  - cosmeticName: Sweet Shades
+    cosmeticSlot: 0
+    cosmeticIcon: {fileID: 21300000, guid: c717cc3c8e2109b4abebc53322c7bb21, type: 2}
+    cosmeticPrefab: {fileID: 1287793060729192, guid: dd67edcf43ca6f54ba3e6ab411926509, type: 2}
+    requiresDLC: 0
+    dlcID: 0
+  - cosmeticName: Disguise
+    cosmeticSlot: 0
+    cosmeticIcon: {fileID: 21300000, guid: 8ff0c6bd2ba3b484ea08666c1ce83bc1, type: 2}
+    cosmeticPrefab: {fileID: 1536526321031835, guid: c4656241b3014a844ae458375d09d2f7, type: 2}
+    requiresDLC: 0
+    dlcID: 0
+  - cosmeticName: Googly Eyes
+    cosmeticSlot: 0
+    cosmeticIcon: {fileID: 21300000, guid: e8afe6197e7af6847949964594516be1, type: 2}
+    cosmeticPrefab: {fileID: 1469378759962713, guid: e9ec6fd758efc4f4888e3118c136a01b, type: 2}
+    requiresDLC: 0
+    dlcID: 0
+  - cosmeticName: Axeboi
+    cosmeticSlot: 0
+    cosmeticIcon: {fileID: 21300000, guid: 5af4c7e6898aedd4599c131d0a098295, type: 2}
+    cosmeticPrefab: {fileID: 1064627747296341, guid: 2e58828e22adb03489caefb7ace72fc5, type: 2}
+    requiresDLC: 0
+    dlcID: 0
+  defaultSuitColor: {r: 0, g: 0, b: 0, a: 0}
+  emoteList:
+  - emoteName: Family Man
+    emoteAnimationName: Family Man
+    emoteCooldown: 180
+    emoteLockInTime: 120
+    emoteLength: 0
+    emoteAudioClips:
+    - {fileID: 8300000, guid: f40e08d261bbb3d428f21b9239fc84bf, type: 3}
+    - {fileID: 8300000, guid: e7c8495b057e5ca40aa1d74d3a58ef56, type: 3}
+    emoteIcon: {fileID: 21300000, guid: 774e4daf59e4edb4983770fdcf9a2ec6, type: 2}
+    emoteIsIndefinite: 1
+  - emoteName: Thumbs Up
+    emoteAnimationName: Thumbs Up
+    emoteCooldown: 120
+    emoteLockInTime: 60
+    emoteLength: 120
+    emoteAudioClips:
+    - {fileID: 8300000, guid: c330537369a26f445a5e7664d2351a0c, type: 3}
+    emoteIcon: {fileID: 21300000, guid: d9c99ec92bb7b78478b8c3a37554061d, type: 2}
+    emoteIsIndefinite: 1
+  - emoteName: Point
+    emoteAnimationName: Point
+    emoteCooldown: 60
+    emoteLockInTime: 60
+    emoteLength: 0
+    emoteAudioClips:
+    - {fileID: 8300000, guid: c330537369a26f445a5e7664d2351a0c, type: 3}
+    emoteIcon: {fileID: 21300000, guid: 09fa4c27c38755443a870348d87e1034, type: 2}
+    emoteIsIndefinite: 1
+  - emoteName: Jig
+    emoteAnimationName: Jig
+    emoteCooldown: 60
+    emoteLockInTime: 30
+    emoteLength: 0
+    emoteAudioClips: []
+    emoteIcon: {fileID: 21300000, guid: 0b31af20f1783e549af3d08f772a8e7a, type: 2}
+    emoteIsIndefinite: 1
+  - emoteName: The Finger
+    emoteAnimationName: Middle Finger
+    emoteCooldown: 30
+    emoteLockInTime: 30
+    emoteLength: 0
+    emoteAudioClips: []
+    emoteIcon: {fileID: 21300000, guid: 85db0796a95cd0c4fbd323ff4c8d5ea4, type: 2}
+    emoteIsIndefinite: 1
+  - emoteName: Headbang
+    emoteAnimationName: Headbang
+    emoteCooldown: 30
+    emoteLockInTime: 30
+    emoteLength: 0
+    emoteAudioClips: []
+    emoteIcon: {fileID: 21300000, guid: 35d3d4d0f0825504592e7e7b2716c31b, type: 2}
+    emoteIsIndefinite: 1
+  - emoteName: Squat
+    emoteAnimationName: Squat
+    emoteCooldown: 60
+    emoteLockInTime: 60
+    emoteLength: 0
+    emoteAudioClips: []
+    emoteIcon: {fileID: 21300000, guid: 238b001d1b2fcab40b139f1097d21dce, type: 2}
+    emoteIsIndefinite: 1
+  - emoteName: Thumbs Down
+    emoteAnimationName: Thumbs Down
+    emoteCooldown: 30
+    emoteLockInTime: 30
+    emoteLength: 120
+    emoteAudioClips: []
+    emoteIcon: {fileID: 21300000, guid: 80475f599853e8b42b8bb5c7b37ad638, type: 2}
+    emoteIsIndefinite: 1
+  - emoteName: Salute
+    emoteAnimationName: Salute
+    emoteCooldown: 30
+    emoteLockInTime: 60
+    emoteLength: 0
+    emoteAudioClips: []
+    emoteIcon: {fileID: 21300000, guid: 51965a3b75d279244943e81123cb5136, type: 2}
+    emoteIsIndefinite: 1
+  - emoteName: Hello!
+    emoteAnimationName: Wave
+    emoteCooldown: 30
+    emoteLockInTime: 30
+    emoteLength: 0
+    emoteAudioClips: []
+    emoteIcon: {fileID: 21300000, guid: 47988b6283d8d284d885907ef088925d, type: 2}
+    emoteIsIndefinite: 1
+  installedDLCs:
+  debugOverrideDLCs: 0
+  personas:
+  - personaName: John Bonerooms
+    personaIcon: {fileID: 2800000, guid: 00e9525478ecfd44f9bc22e69ca7931b, type: 3}
+  - personaName: skelephobicc
+    personaIcon: {fileID: 2800000, guid: 66da16c81e94d814984a62126decca5d, type: 3}
+  - personaName: Burgeregrub
+    personaIcon: {fileID: 2800000, guid: b1b3400e2dbfda548baf52883255a290, type: 3}
+  - personaName: Suitful Of Cheezos
+    personaIcon: {fileID: 2800000, guid: f52cd5d8235c45a4db82cf1c4a82d3de, type: 3}
+  - personaName: Kerblamzo
+    personaIcon: {fileID: 2800000, guid: 7f5d1d1ad89db1e43b20060856700b4d, type: 3}
+  - personaName: glubglub blbl
+    personaIcon: {fileID: 2800000, guid: 4daa127dae9c03b40ad4acdaad779111, type: 3}
+  - personaName: Infinite Power
+    personaIcon: {fileID: 2800000, guid: 36f3cc4fc59a9ce488e97935de8723e3, type: 3}
+  - personaName: Improper Boning
+    personaIcon: {fileID: 2800000, guid: 6eba69837b69f644e9455044df6e28e7, type: 3}
+  localizationTables: []
+  localizationFonts: []
+  language: 0
+--- !u!82 &82230828003225165
+AudioSource:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100929801108489}
+  m_Enabled: 1
+  OutputAudioMixerGroup: {fileID: 24300006, guid: 1c30b56aac13fc24588544ee4458ce2b, type: 2}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

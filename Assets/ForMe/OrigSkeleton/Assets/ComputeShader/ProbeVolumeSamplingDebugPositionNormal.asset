@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!72 &7200000
+ComputeShader:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ProbeVolumeSamplingDebugPositionNormal
+  variants:
+  - serializedVersion: 2
+    targetRenderer: 2
+    targetLevel: 0
+    kernels:
+    - serializedVersion: 3
+      name: ComputePositionNormal
+      uniqueVariants:
+      - serializedVersion: 2
+        cbVariantIndices: 00000000
+        cbs:
+        - name: $Globals
+          generatedName:
+          bindPoint: 0
+          samplerBindPoint: -1
+          texDimension: -1
+        textures:
+        - name: _CameraDepthTexture
+          generatedName:
+          bindPoint: 0
+          samplerBindPoint: -1
+          texDimension: 2
+        - name: _CameraNormalsTexture
+          generatedName:
+          bindPoint: 1
+          samplerBindPoint: -1
+          texDimension: 2
+        builtinSamplers: []
+        inBuffers: []
+        outBuffers:
+        - name: _ResultBuffer
+          generatedName:
+          bindPoint: 0
+          samplerBindPoint: -1
+          texDimension: -1
+        code: 445842436ddc55c0ba9c02b51a06b7a674868fd10100000028030000030000002c0000003c0000004c0000004953474e0800000000000000080000004f53474e08000000000000000800000053484558d402000050000500b50000006a08000159000004468e2000000000008400000058180004007010000000000055550000581800040070100001000000555500009e00000400e01100000000001000000068000002020000009b0000040100000001000000010000003800000b3200100000000000e68a2000000000007a000000024000000000003f0000003f00000000000000003200000b3200100000000000468020000000000083000000e68a2000000000007a00000046001000000000003200000f32001000000000004600100000000000024000000000004000000040000000000000000002400000000080bf000080bf000000000000000038000009f200100001000000560510804100000000000000468e200000000000530000003200000af200100000000000468e200000000000520000000600100000000000460e1000010000001b000006320010000100000046802000000000008300000036000008c20010000100000002400000000000000000000000000000000000002d000089c2000080435515001200100001000000460e100001000000467e1000000000003200000af200100000000000468e200000000000540000000600100001000000460e10000000000000000008f200100000000000460e100000000000468e200000000000550000000e00000772001000000000004602100000000000f60f100000000000360000058200100000000000014000000000803fa8000009f2e011000000000001400000000000000140000000000000460e1000000000001c000006320010000000000046802000000000008300000036000008c20010000000000002400000000000000000000000000000000000002d000089c2000080435515007200100000000000460e100000000000467e1000010000003600000582001000000000000140000000000000a8000009f2e011000000000001400000010000000140000000000000460e1000000000003e000001
+        threadGroupSize: 010000000100000001000000
+        requirements: 50241
+        keywords: []
+        isCompiled: 0
+      variantIndices:
+      - : 0
+      globalKeywords: []
+      localKeywords: []
+      dynamicKeywords: []
+    constantBuffers:
+    - name: $Globals
+      byteSize: 2112
+      params:
+      - name: unity_MatrixInvVP
+        type: 0
+        offset: 1312
+        arraySize: 0
+        rowCount: 4
+        colCount: 4
+      - name: _ScreenSize
+        type: 0
+        offset: 1952
+        arraySize: 0
+        rowCount: 1
+        colCount: 4
+      - name: _positionSS
+        type: 0
+        offset: 2096
+        arraySize: 0
+        rowCount: 1
+        colCount: 4
+    resourcesResolved: 1
+    compilerPlatform: 0
+    needsReflectionData: 0
+  m_CompilationContext:
+    serializedVersion: 2
+    buildTarget:
+      platform: 0
+      subTarget: 0
+      extendedPlatform: 0
+      isEditor: 0
+    platformGroup: 0
+    sourceFileName:
+    source:
+    sourceFile:
+    kernels: []
+    kernelMacros: []
+    compilationFlags: 0
+    supportedAPIs: 0
+    useDxcAPIs: 0
+    neverUseDxcAPIs: 0
+    includeHash0: 0
+    includeHash1: 0
+    includeHash2: 0
+    includeHash3: 0
+  errors: []

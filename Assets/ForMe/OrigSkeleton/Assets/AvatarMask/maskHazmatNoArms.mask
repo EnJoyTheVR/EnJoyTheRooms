@@ -1,0 +1,165 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: maskHazmatNoArms
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path:
+    m_Weight: 1
+  - m_Path: armHazmat
+    m_Weight: 0
+  - m_Path: armHazmat/Bone
+    m_Weight: 0
+  - m_Path: armHazmat/Bone/Bone.001
+    m_Weight: 0
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_L
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_L/Bone.001_L.001
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003/Bone.001_L.005
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003/Bone.001_L.005/Bone.001_L.006
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003/Bone.001_L.005/Bone.001_L.006/Bone.001_L.007
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003/Bone.001_L.005/Bone.001_L.006/Bone.001_L.007/Bone.001_L.007_end
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003/Bone.001_L.009
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003/Bone.001_L.009/Bone.001_L.010
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003/Bone.001_L.009/Bone.001_L.010/Bone.001_L.011
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003/Bone.001_L.009/Bone.001_L.010/Bone.001_L.011/Bone.001_L.011_end
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003/Bone.001_L.013
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003/Bone.001_L.013/Bone.001_L.014
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003/Bone.001_L.013/Bone.001_L.014/Bone.001_L.015
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003/Bone.001_L.013/Bone.001_L.014/Bone.001_L.015/Bone.001_L.015_end
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003/Bone.001_L.017
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003/Bone.001_L.017/Bone.001_L.018
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003/Bone.001_L.017/Bone.001_L.018/Bone.001_L.019
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003/Bone.001_L.017/Bone.001_L.018/Bone.001_L.019/Bone.001_L.019_end
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003/Bone.001_L.021
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003/Bone.001_L.021/Bone.001_L.022
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003/Bone.001_L.021/Bone.001_L.022/Bone.001_L.023
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003/Bone.001_L.021/Bone.001_L.022/Bone.001_L.023/Bone.001_L.023_end
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_R
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_R/Bone.001_R.001
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003/Bone.001_R.005
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003/Bone.001_R.005/Bone.001_R.006
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003/Bone.001_R.005/Bone.001_R.006/Bone.001_R.007
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003/Bone.001_R.005/Bone.001_R.006/Bone.001_R.007/Bone.001_R.007_end
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003/Bone.001_R.009
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003/Bone.001_R.009/Bone.001_R.010
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003/Bone.001_R.009/Bone.001_R.010/Bone.001_R.011
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003/Bone.001_R.009/Bone.001_R.010/Bone.001_R.011/Bone.001_R.011_end
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003/Bone.001_R.013
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003/Bone.001_R.013/Bone.001_R.014
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003/Bone.001_R.013/Bone.001_R.014/Bone.001_R.015
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003/Bone.001_R.013/Bone.001_R.014/Bone.001_R.015/Bone.001_R.015_end
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003/Bone.001_R.017
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003/Bone.001_R.017/Bone.001_R.018
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003/Bone.001_R.017/Bone.001_R.018/Bone.001_R.019
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003/Bone.001_R.017/Bone.001_R.018/Bone.001_R.019/Bone.001_R.019_end
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003/Bone.001_R.021
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003/Bone.001_R.021/Bone.001_R.022
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003/Bone.001_R.021/Bone.001_R.022/Bone.001_R.023
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003/Bone.001_R.021/Bone.001_R.022/Bone.001_R.023/Bone.001_R.023_end
+    m_Weight: 1
+  - m_Path: armHazmat/Bone/Bone.001/Bone.002
+    m_Weight: 0
+  - m_Path: armHazmat/Bone/Bone.001/Bone.002/Bone.003
+    m_Weight: 0
+  - m_Path: armHazmat/Bone/Bone.001/Bone.002/Bone.003/Bone.004
+    m_Weight: 0
+  - m_Path: armHazmat/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.004_end
+    m_Weight: 0
+  - m_Path: armHazmat/Bone_L
+    m_Weight: 0
+  - m_Path: armHazmat/Bone_L/Bone_L.001
+    m_Weight: 0
+  - m_Path: armHazmat/Bone_L/Bone_L.001/Bone_L.002
+    m_Weight: 0
+  - m_Path: armHazmat/Bone_L/Bone_L.001/Bone_L.002/Bone_L.003
+    m_Weight: 0
+  - m_Path: armHazmat/Bone_L/Bone_L.001/Bone_L.002/Bone_L.003/Bone_L.003_end
+    m_Weight: 0
+  - m_Path: armHazmat/Bone_R
+    m_Weight: 0
+  - m_Path: armHazmat/Bone_R/Bone_R.001
+    m_Weight: 0
+  - m_Path: armHazmat/Bone_R/Bone_R.001/Bone_R.002
+    m_Weight: 0
+  - m_Path: armHazmat/Bone_R/Bone_R.001/Bone_R.002/Bone_R.003
+    m_Weight: 0
+  - m_Path: armHazmat/Bone_R/Bone_R.001/Bone_R.002/Bone_R.003/Bone_R.003_end
+    m_Weight: 0
+  - m_Path: armHazmat/lookTarg
+    m_Weight: 0
+  - m_Path: armHazmat/lookTarg/lookTarg_end
+    m_Weight: 0
+  - m_Path: armHazmat/Pole_L
+    m_Weight: 0
+  - m_Path: armHazmat/Pole_L/Pole_L_end
+    m_Weight: 0
+  - m_Path: armHazmat/Pole_R
+    m_Weight: 0
+  - m_Path: armHazmat/Pole_R/Pole_R_end
+    m_Weight: 0
+  - m_Path: armHazmat/Targ_L
+    m_Weight: 0
+  - m_Path: armHazmat/Targ_L/Targ_L_end
+    m_Weight: 0
+  - m_Path: armHazmat/Targ_R
+    m_Weight: 0
+  - m_Path: armHazmat/Targ_R/Targ_R_end
+    m_Weight: 0
+  - m_Path: modHazmatMirrorSculpt
+    m_Weight: 0
