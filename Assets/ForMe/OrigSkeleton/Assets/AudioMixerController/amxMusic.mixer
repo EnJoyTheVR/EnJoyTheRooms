@@ -49,10 +49,10 @@ AudioMixerEffectController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name:
+  m_Name: 
   m_EffectID: a7070d514a181a24b856f3ce659ac349
   m_EffectName: Attenuation
-  m_MixLevel: 00000000000000000000000000000000
+  m_MixLevel: b449141980567ee4b8668da5eb2cca65
   m_Parameters: []
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
@@ -67,6 +67,6 @@ AudioMixerSnapshotController:
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: d023cc26b63c2f44eb3f7cb456e93dd1
   m_FloatValues:
-    b1813c2ff9c38354fad71ee47c995491: 0
     8a4ea3175296cc948820d06986b3ba6d: 1
+    b1813c2ff9c38354fad71ee47c995491: 0
   m_TransitionOverrides: {}
