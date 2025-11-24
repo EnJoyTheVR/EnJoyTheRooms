@@ -12,12 +12,11 @@ local danceDuration = 3.0
 
 -- === “очки патрулировани€ ===
 local patrolPoints = {
-    CS.UnityEngine.Vector3(-18.5, 0, -12.48),
-    CS.UnityEngine.Vector3(-18.5, 0, -23.19),
-    CS.UnityEngine.Vector3(-14.05, 0, -23.19),
-    CS.UnityEngine.Vector3(-14.05, 0, -12.42),
-    CS.UnityEngine.Vector3(-6.95, 0, -18.56),
-    CS.UnityEngine.Vector3(2.45, 0, -12.4),
+    CS.UnityEngine.Vector3(18.43, 0, 9.47),
+    CS.UnityEngine.Vector3(18.67, 0, -34.57),
+    CS.UnityEngine.Vector3(-50, 0, 9.78),
+    CS.UnityEngine.Vector3(-49.8, 0, -34.5),
+    CS.UnityEngine.Vector3(-15.663, 0, -12.336),
 }
 -- ====================
 
@@ -165,7 +164,6 @@ local function IsPlayerVisible()
                    pTransform:IsChildOf(firstHit.collider.transform) then
                     return true
                 end
-                print("Player is behind an obstacle. Hit: " .. firstHit.collider.name)
                 return false
             else
                 return true
@@ -264,7 +262,6 @@ local function UpdatePatrol()
     -- ≈сли агент "потер€л" путь, заставл€ем его снова идти к текущей цели
     if skeletonNavMeshAgent.isOnNavMesh and not skeletonNavMeshAgent.pathPending and 
        skeletonNavMeshAgent.remainingDistance == math.huge and targetPatrolPoint ~= nil then
-        print("NavMesh Agent has no path. Re-setting destination.")
         skeletonNavMeshAgent:SetDestination(targetPatrolPoint)
     end
 end

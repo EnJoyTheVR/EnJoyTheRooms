@@ -18,7 +18,6 @@ local function GetRandomScene()
         print("Error: Scene list is empty!")
         return nil
     end
-    math.randomseed(os.time())
     local randomIndex = math.random(1, #sceneList)
     return sceneList[randomIndex]
 end
@@ -53,6 +52,7 @@ end
 
 -- Функция Start (вызывается при инициализации)
 function Start()
+    math.randomseed(os.time())
     print("Random scene loader started. Will load in " .. interval .. " seconds.")
     isGameEnded = false
     hasSceneLoaded = false
