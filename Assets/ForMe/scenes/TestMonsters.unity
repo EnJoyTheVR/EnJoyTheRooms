@@ -2631,9 +2631,13 @@ PrefabInstance:
       value: Skeleton
       objectReference: {fileID: 0}
     - target: {fileID: 5022022410903433081, guid: fbe1cb8745d068d45abfdb2363f3f399, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5022022410903433081, guid: fbe1cb8745d068d45abfdb2363f3f399, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 54e7a55ff5ade4644983650e55475942, type: 2}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4952,6 +4956,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3629965712884810540, guid: f6c691a8785f844408e5d2041fc3e01f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629965712884810540, guid: f6c691a8785f844408e5d2041fc3e01f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: cac75b33c97e967489c501d1fa583926, type: 2}
     - target: {fileID: 5093915742955722617, guid: f6c691a8785f844408e5d2041fc3e01f, type: 3}
       propertyPath: m_LocalScale.y
       value: 10.684672
@@ -4963,6 +4975,14 @@ PrefabInstance:
     - target: {fileID: 5535461523647483203, guid: f6c691a8785f844408e5d2041fc3e01f, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5741690204033200164, guid: f6c691a8785f844408e5d2041fc3e01f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5741690204033200164, guid: f6c691a8785f844408e5d2041fc3e01f, type: 3}
+      propertyPath: luaScriptName
+      value: MoSkeleton2.lua
       objectReference: {fileID: 0}
     - target: {fileID: 6724032182355831308, guid: f6c691a8785f844408e5d2041fc3e01f, type: 3}
       propertyPath: m_LocalPosition.x

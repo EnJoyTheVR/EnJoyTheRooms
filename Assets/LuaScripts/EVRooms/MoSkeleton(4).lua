@@ -42,7 +42,7 @@ local danceAnimations = {
 -- ====================
 
 -- === Глобальные переменные скелета ===
-local SKELETON_OBJECT_NAME = "MoSkeleton1" -- <<< Имя вашего объекта скелета
+local SKELETON_OBJECT_NAME = "MoSkeleton4" -- <<< Имя вашего объекта скелета
 
 local skeletonTransform = nil
 local skeletonNavMeshAgent = nil -- Компонент NavMesh Agent

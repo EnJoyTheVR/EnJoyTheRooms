@@ -11,24 +11,11 @@ local danceDuration = 3.0
 
 -- === Точки патрулирования ===
 local patrolPoints = {
-    CS.UnityEngine.Vector3(16.39, 0, 9.79),
-    CS.UnityEngine.Vector3(18.91, 0, -8.12),
-    CS.UnityEngine.Vector3(19.19, 0, -31.28),
-    CS.UnityEngine.Vector3(5.38, 0, 9.93),
-    CS.UnityEngine.Vector3(7.9, 0, -6.45),
-    CS.UnityEngine.Vector3(4.47, 0, -31.59),
-    CS.UnityEngine.Vector3(-9.03, 0, 9.74),
-    CS.UnityEngine.Vector3(-9.54, 0, -10.7),
-    CS.UnityEngine.Vector3(-7.15, 0, -32.106),
-    CS.UnityEngine.Vector3(-22.16, 0, -13.704),
-    CS.UnityEngine.Vector3(-20.41, 0, 9.76),
-    CS.UnityEngine.Vector3(-20.27, 0, -31.73),
-    CS.UnityEngine.Vector3(-35.52, 0, 7.47),
-    CS.UnityEngine.Vector3(-35.028, 0, -5.13),
-    CS.UnityEngine.Vector3(-30.92, 0, -31.49),
-    CS.UnityEngine.Vector3(-46.83, 0, 6.75),
-    CS.UnityEngine.Vector3(-44.75, 0, -11.03),
-    CS.UnityEngine.Vector3(-50.14, 0, -32.01),
+    CS.UnityEngine.Vector3(18.43, 0, 9.47),
+    CS.UnityEngine.Vector3(18.67, 0, -34.57),
+    CS.UnityEngine.Vector3(-50, 0, 9.78),
+    CS.UnityEngine.Vector3(-49.8, 0, -34.5),
+    CS.UnityEngine.Vector3(-15.663, 0, -12.336),
 }
 -- ====================
 
@@ -42,7 +29,7 @@ local danceAnimations = {
 -- ====================
 
 -- === Глобальные переменные скелета ===
-local SKELETON_OBJECT_NAME = "MoSkeleton1" -- <<< Имя вашего объекта скелета
+local SKELETON_OBJECT_NAME = "MoSkeleton" -- <<< Имя вашего объекта скелета
 
 local skeletonTransform = nil
 local skeletonNavMeshAgent = nil -- Компонент NavMesh Agent
@@ -102,7 +89,7 @@ local function SetState(newState)
             print("Skeleton starts patrolling.")
             -- Установка начальной цели для NavMesh Agent
             if skeletonNavMeshAgent ~= nil and #patrolPoints > 0 then
-                 --currentPatrolIndex = 1
+                 currentPatrolIndex = 1
                  targetPatrolPoint = patrolPoints[currentPatrolIndex]
                  skeletonNavMeshAgent:SetDestination(targetPatrolPoint)
                  print("NavMesh Agent initial destination set to: " .. tostring(targetPatrolPoint))
@@ -294,8 +281,7 @@ local function UpdateChase()
         MoveSkeleton(playerPosition, runSpeed)
         -- Проверка "догнал ли"
         local distanceToPlayer = GetDistanceToPlayer()
-        if distanceToPlayer < 1 then
-             EVR:BlockStick()
+        if distanceToPlayer < 1.5 then
              print("Skeleton caught the player!")
              SetState("dancing")
         end
@@ -346,10 +332,6 @@ function Start()
     else
         print("CRITICAL ERROR: Skeleton object '" .. SKELETON_OBJECT_NAME .. "' not found in scene.")
     end
-
-    if #patrolPoints > 0 then
-       currentPatrolIndex = math.random(1, #patrolPoints)
-    end
     
     SetState("patrol") -- Инициализируем состояние
     lastUpdateTime = 0
@@ -363,6 +345,29 @@ end
 
 -- Функция Update 
 function FixedUpdate()
+    -- >>> НАЧАЛО ИЗМЕНЕНИЙ <<<
+    -- Обновляем параметр скорости в аниматоре
+    if skeletonAnimator ~= nil and skeletonNavMeshAgent ~= nil and skeletonNavMeshAgent.isOnNavMesh then
+        -- Получаем текущую горизонтальную скорость агента
+        local currentSpeed = skeletonNavMeshAgent.velocity.magnitude
+        -- Устанавливаем значение параметра "Speed" в аниматоре
+        skeletonAnimator:SetFloat("Speed", currentSpeed)
+    end
+    -- >>> КОНЕЦ ИЗМЕНЕНИЙ <<<
+
+    lastUpdateTime = lastUpdateTime + 1
+    if lastUpdateTime < 12 then 
+        return
+    end
+    lastUpdateTime = 0
+
+    if currentState == "patrol" then
+        UpdatePatrol()
+    elseif currentState == "chase" then
+        UpdateChase()
+    elseif currentState == "dancing" then
+        UpdateDancing()
+    end
     lastUpdateTime = lastUpdateTime + 1
     if lastUpdateTime < 12 then 
         return
@@ -377,3 +382,18 @@ function FixedUpdate()
         UpdateDancing()
     end
 end
+-- === Функции для обработки событий анимации ===
+
+-- Эта функция будет вызываться событием 'castFootstep'
+-- function castFootstep()
+    -- Оставляем пустым, чтобы просто убрать ошибку.
+    -- В будущем здесь можно будет добавить код для проигрывания звука шага.
+    -- print("Шаг!")
+-- end
+
+-- Добавьте здесь другие функции, на которые жалуется консоль.
+-- Например, если есть ошибка для события 'swingSound', добавьте:
+--
+-- function swingSound()
+-- end
+
