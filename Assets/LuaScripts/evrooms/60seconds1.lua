@@ -1,5 +1,4 @@
 -- Скрипт для включения компонента NavMeshAgent у монстров
-
 -- Имена объектов монстров
 local monsterNames = {
     "MoSkeleton1",
