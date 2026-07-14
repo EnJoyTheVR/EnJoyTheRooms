@@ -1,5 +1,6 @@
 -- Полный скрипт для поведения скелета (AI) с NavMesh и Raycast
 -- Сохраните как skeleton_ai_final.lua
+
 -- === Настройки ИИ ===
 local walkSpeed = 1.5       
 local runSpeed = 4.0        
@@ -295,6 +296,8 @@ local function UpdateChase()
         -- Проверка "догнал ли"
         local distanceToPlayer = GetDistanceToPlayer()
         if distanceToPlayer < 1 then
+             local deathMenu = CS.UnityEngine.GameObject.Find("DeathMenu")
+             deathMenu:GetComponent(typeof(CS.UnityEngine.Transform)).position = EVR.Player:GetComponent(typeof(CS.UnityEngine.Transform)).position
              EVR:BlockStick()
              print("Skeleton caught the player!")
              SetState("dancing")
